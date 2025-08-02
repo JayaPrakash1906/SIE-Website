@@ -33,7 +33,7 @@ const Home = () => {
 
   const announcements = [
     <>
-      <FaRocket className="inline text-red-500 mr-1" /> Launch of THE SCHOOL OF INNOVATION & ENTREPRENEURSHIP
+      <FaRocket className="inline text-red-500 mr-1" /> Launch of The School of Innovation & Entrepreneurship
       {" — "}
       <FaCalendarAlt className="inline text-blue-600 mr-1" /> 4th August 2025
       {" — "}
@@ -76,7 +76,7 @@ const Home = () => {
             alt="Left Background"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black opacity-40" />
+          <div className="absolute inset-0 bg-black opacity-50" />
         </div>
 
         <div className="absolute top-0 right-0 w-1/2 h-full">
@@ -85,7 +85,7 @@ const Home = () => {
             alt="Right Background"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black opacity-40" />
+          <div className="absolute inset-0 bg-black opacity-50" />
         </div>
 
         <div className="relative z-10 flex items-center justify-center h-full px-4">
@@ -96,9 +96,10 @@ const Home = () => {
             <p className="text-lg sm:text-xl text-gray-200 mb-6">
               Empowering the next generation of innovators and entrepreneurs at IIT Madras
             </p>
+            <a href="/about_us">
             <button className="bg-transparent border-2 border-white hover:bg-white hover:text-black text-white px-6 py-2 sm:px-8 sm:py-3 rounded-md transition-colors duration-300">
               Learn More
-            </button>
+            </button></a>
           </div>
         </div>
       </div>
@@ -116,14 +117,14 @@ const Home = () => {
         <div className="bg-[#10104B] text-white flex flex-col justify-center items-center p-6 md:p-8  transform transition duration-700 hover:-translate-y-2 fade-in">
           <h2 className="text-2xl sm:text-3xl font-semibold text-blue-400 mb-4">Our Vision</h2>
           <p className="text-start max-w-xl mb-6 text-sm sm:text-base">
-            To be a leading catalyst for entrepreneurship at IIT Madras by providing structured academic support and immersive learning experiences that inspire and equip aspiring founders to turn ideas into impactful ventures.
+           To be a cornerstone of entrepreneurial excellence at IIT Madras by providing structured academic support and inspiring the next generation of startup founders. Through innovative programs and hands-on learning, we aim to nurture and empower aspiring entrepreneurs on their journey from idea to impact.
           </p>
         </div>
 
         <div className="bg-[#10104B] text-white flex flex-col justify-center items-center p-6 md:p-8  transform transition duration-700 hover:-translate-y-2 fade-in">
           <h2 className="text-2xl sm:text-3xl font-semibold text-blue-400 mb-4">Our Mission</h2>
           <p className="text-start max-w-xl mb-6 text-sm sm:text-base">
-            To provide training in entrepreneurship through structured programs and guidance through experienced and visionary leadership to coordinate events, visits, workshops, and external programs, generating leads for future advancements
+           To train the next generation of tech founders through practice-based founder-led education that emphasises impact with growth
           </p>
         </div>
 
@@ -142,8 +143,9 @@ const Home = () => {
           {
             title: "Nirmaan",
             description:
-              "Nirmaan, The Pre-incubator of IIT Madras, is the first of its kind dedicated pre-incubator on a college campus in the country...",
+              " Nirmaan, The Pre-incubator of IIT Madras, is the first of its kind dedicated pre-incubator on a college campus in the country. Its primary objective is to provide technical guidance and business mentorship to student teams, assisting them in refining their business ideas to achieve both technical robustness and economic viability. In addition to offering a well-equipped collaborative workspace and essential financial support, Nirmaan cultivates a supportive and encouraging environment conducive to innovation. Furthermore, the program facilitates valuable connections between nascent startups and experienced mentors who provide specialized technical and business insights, crucial for translating ideas into successful businesses.",
             image: nirmaanImg,
+            link: "https://nirmaan.iitm.ac.in/",
             bg: "bg-gradient-to-r from-green-100 via-white to-green-50",
             accent: "text-green-600",
             glass: "backdrop-blur-xl bg-white/40",
@@ -151,8 +153,9 @@ const Home = () => {
           {
             title: "Centre for Innovation (CFI)",
             description:
-              "The Centre for Innovation (CFI) at IIT Madras is a pioneering student-led “Tinker Lab”...",
+              "The Centre for Innovation (CFI) at IIT Madras is a pioneering student-led `Tinker Lab` and one of the oldest academic entities dedicated to “Doing by Learning”. Established by the alumni class of 1981, CFI has expanded over the past fifteen years into a central hub focusing on nurturing innovation and technological inventions. The centre is structured around approximately 14 'Hobby' clubs and 8 competition teams, complemented by additional teams offering expertise in branding, engagement, finance, and web operations/coding support.",
             image: cfiImg,
+            link: "https://cfi.iitm.ac.in/",
             bg: "bg-gradient-to-r from-red-100 via-white to-red-50",
             accent: "text-red-600",
             glass: "backdrop-blur-xl bg-white/40",
@@ -169,15 +172,18 @@ const Home = () => {
               <p className="text-gray-700 mt-4 text-lg leading-relaxed text-justify">
                 {sec.description}
               </p>
-              <button
-                className={`mt-6 px-6 py-2 rounded-full text-white font-medium ${
+              <a
+                href={sec.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`mt-6 inline-block px-6 py-2 rounded-full text-white font-medium ${
                   index % 2 === 0
                     ? "bg-green-500 hover:bg-green-600"
                     : "bg-red-500 hover:bg-red-600"
                 } transition`}
               >
                 Explore More
-              </button>
+              </a>
             </div>
 
             <div className="md:w-1/3 flex justify-center md:justify-end">

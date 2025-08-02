@@ -29,8 +29,8 @@ const About = () => {
         <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-4">
           About Our School
         </h1>
-        <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-          Learn about our vision, leadership, and the vibrant ecosystem at our institute.
+        <p className="text-gray-600 max-w-2xl mx-auto text-lg text-justify">
+         We provide an academic footprint to IITM’s extensive startup evosystem. Through regular and ‘ professor of practice’ faculty we aim to provide structured entrepreneurship education to startup founders and corporates. Our flagship programme include the maker space CFI, pre-incubator Nirmaan, MS in Entrepreneurship, UG & PG FIR and EIR programmes along with seed funding and mentorship.
         </p>
       </section>
 
@@ -52,15 +52,14 @@ const About = () => {
             <h2 className="text-3xl font-bold">Director's Message</h2>
           </div>
           <p className="text-gray-700 text-lg leading-relaxed mb-4">
-            Innovation and entrepreneurship have been vital to the IIT Madras
-            story for the last few years, underlining our performance on
-            various parameters including national rankings. The ‘I&E’ stack at
-            IIT Madras today boasts a vibrant tinker lab and Maker Space in the
-            form of CFI and the Pre-Incubator Nirmaan...
+             The School of Innovation & Entrepreneurship provides the academic foundation to IITM’s ‘ I&E Stack’ and will train the coming generation of startup founders who will produce distinctive solutions addressing some of the most pressing industrial and societal challenges. SIE at IIT Madras is one of our key initiatives towards the vision of Viksit Bharat 2047 and is aligned with visionary programmes such as Make in India, Swacch Bharat and NEP.
           </p>
-          <button className="self-start bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 mt-2 rounded-lg transition">
+           <p className="text-right font-semibold text-gray-800 mt-4">
+            - Prof. Kamakoti Veezhinathan
+          </p>
+          {/* <button className="self-start bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 mt-2 rounded-lg transition">
             Read More
-          </button>
+          </button> */}
         </div>
       </div>
 
@@ -77,19 +76,22 @@ const About = () => {
         <div className="md:w-3/5 p-8 bg-[#f9fafb] flex flex-col justify-center">
           <div className="flex items-center gap-3 mb-2 text-green-700">
             <FaQuoteLeft className="text-2xl" />
-            <h2 className="text-3xl font-bold">Faculty Advisor's Message</h2>
+            <h2 className="text-3xl font-bold">Head of School's Message</h2>
           </div>
           <p className="text-gray-700 text-lg leading-relaxed mb-4">
-            Plans are on anvil to create IITM-specific funding mechanisms at the initiation and scale-up stages for startups, to be housed under the banner of this school. 
-            Practice-led degrees at undergraduate and master’s levels are also being envisaged. “We are also looking at an ‘Innovation Doctorate,’
+             We are setting up a world-class entrepreneurial training ecosystem that is ‘ by the founders for the founders’, and aim to be among the top entrepreneurial universities across the world within the coming decade.
           </p>
-          <button className="self-start bg-green-600 hover:bg-green-700 text-white px-5 py-2 mt-2 rounded-lg transition">
+           <p className="text-right font-semibold text-gray-800 mt-4">
+            - Prof. Prabhu Rajagopal
+          </p>
+          {/* <button className="self-start bg-green-600 hover:bg-green-700 text-white px-5 py-2 mt-2 rounded-lg transition">
             Read More
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
 
+   
       {/* Scroll to Top Button */}
       {showTopBtn && (
         <button
