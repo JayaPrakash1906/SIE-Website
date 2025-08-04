@@ -57,6 +57,9 @@ const About = () => {
            <p className="text-right font-semibold text-gray-800 mt-4">
             - Prof. Kamakoti Veezhinathan
           </p>
+          <p className="text-right text-sm text-gray-600">
+    Director,IIT Madras
+</p>
           {/* <button className="self-start bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 mt-2 rounded-lg transition">
             Read More
           </button> */}
@@ -81,9 +84,13 @@ const About = () => {
           <p className="text-gray-700 text-lg leading-relaxed mb-4">
              We are setting up a world-class entrepreneurial training ecosystem that is ‘ by the founders for the founders’, and aim to be among the top entrepreneurial universities across the world within the coming decade.
           </p>
-           <p className="text-right font-semibold text-gray-800 mt-4">
-            - Prof. Prabhu Rajagopal
-          </p>
+          <p className="text-right font-semibold text-gray-800 mt-4">
+  - Prof. Prabhu Rajagopal
+</p>
+<p className="text-right text-sm text-gray-600">
+  Faculty Head, School of Innovation and Entrepreneurship
+</p>
+
           {/* <button className="self-start bg-green-600 hover:bg-green-700 text-white px-5 py-2 mt-2 rounded-lg transition">
             Read More
           </button> */}

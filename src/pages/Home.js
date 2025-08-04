@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import img1 from "../assets/nirmaan.jpg";
+import img1 from "../assets/bgimage.jpeg";
 import img2 from "../assets/vision.jpg";
 import img3 from "../assets/mission.avif";
 import img4 from "../assets/DSC.JPG";

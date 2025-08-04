@@ -33,10 +33,10 @@ const Footer = () => {
         </div>
         {/* Contact Info */}
         <div className="flex flex-col items-center lg:items-end gap-2 text-center lg:text-right mt-8 lg:mt-0">
-          <div className="flex items-center gap-2 text-sm text-gray-300"><HiBuildingOffice2 className="text-white" /> I Floor, Sudha & Shankar Innovation Hub</div>
+          <div className="flex items-center gap-2 text-sm text-gray-300"><HiBuildingOffice2 className="text-white" /> 1st Floor, Sudha & Shankar Innovation Hub</div>
           <div className="flex items-center gap-2 text-sm text-gray-300"><FaMapMarkerAlt className="text-white" /> IIT Madras, Chennai - 600 036</div>
           <div className="flex items-center gap-2 text-sm text-gray-300"><FaPhoneAlt className="text-white" /> 044 - 2257 8514</div>
-          <div className="flex items-center gap-2 text-sm text-gray-300"><FaEnvelope className="text-white" /> office.ie@imail.iitm.ac.in</div>
+          <div className="flex items-center gap-2 text-sm text-gray-300"><FaEnvelope className="text-white" />  support@sieiitm.org</div>
         </div>
       </div>
       {/* Bottom Bar */}

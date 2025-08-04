@@ -55,7 +55,7 @@ const Contact = () => {
                 <Mail className="w-6 h-6 text-blue-600" />
                 <div>
                   <h4 className="font-semibold">Email</h4>
-                  <p>office.ie@imail.iitm.ac.in
+                  <p>support@sieiitm.org
 </p>
                 </div>
               </div>
