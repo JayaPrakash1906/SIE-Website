@@ -1,17 +1,8 @@
 import React, { useState } from 'react';
-import {
-  Heart,
-  User,
-  Clock,
-  MessageCircle,
-  Eye,
-  MoreHorizontal,
-  ChevronLeft,
-  ChevronRight,
-} from 'lucide-react';
+import {Heart,  User,  Clock,  MessageCircle,  Eye,  MoreHorizontal,  ChevronLeft,  ChevronRight,} from 'lucide-react';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
-import img1 from '../assets/sie-logo (1).jpg'; // Replace with your actual image import
+import img1 from '../assets/news15.png'; // Replace with your actual image import
 
 // Single News Card
 const NewsCard = ({ article }) => {
@@ -22,7 +13,7 @@ const NewsCard = ({ article }) => {
         <img
           src={article.image}
           alt={article.title}
-          className="w-full h-full max-h-[300px] object-contain"
+          className="w-full h-full max-h-[250px] object-cover"
         />
       </div>
 
@@ -86,15 +77,15 @@ const News = () => {
   const newsData = [
     {
       id: 1,
-      title: 'Launch of SIE',
-      date: 'April 17, 2025',
-      readTime: '2 min read',
+      title: 'Launch of SIE ',
+      date: 'August 4, 2025',
+      readTime: '5 min read',
       subtitle:
-        'Empowering the Next Generation of Innovators: IIT Madras Launches the School of Innovation and Entrepreneurship',
+        ' IIT Madras Launches the School of Innovation and Entrepreneurship',
       views: 120,
       comments: 5,
       image: img1,
-      link: 'https://www.linkedin.com/posts/office-of-innovation-and-entrepreneurship_entrepreneurship-innovation-deeptech-activity-7316351459879538688-Nxwg?utm_source=share&utm_medium=member_desktop&rcm=ACoAADFikn4B6jA0Ct1Y84TowFZRR2JHg75s9fg',
+      link: 'https://www.linkedin.com/posts/activity-7358405925990273024-0eYQ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADFikn4B6jA0Ct1Y84TowFZRR2JHg75s9fg',
     },
     
     // Add more news items here...
