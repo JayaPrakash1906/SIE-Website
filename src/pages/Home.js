@@ -33,13 +33,13 @@ const Home = () => {
 
   const announcements = [
     <>
-      <FaRocket className="inline text-red-500 mr-1" /> Launch of The School of Innovation & Entrepreneurship
+      {/* <FaRocket className="inline text-red-500 mr-1" /> Launch of The School of Innovation & Entrepreneurship
       {" — "}
       <FaCalendarAlt className="inline text-blue-600 mr-1" /> 4th August 2025
       {" — "}
       <FaClock className="inline text-yellow-500 mr-1" /> 5:00 PM onwards
       {" — "}
-      <FaMapMarkerAlt className="inline text-green-600 mr-1" /> Sudha & Shankar Innovation Hub
+      <FaMapMarkerAlt className="inline text-green-600 mr-1" /> Sudha & Shankar Innovation Hub */}
     </>
   ];
 

@@ -21,10 +21,12 @@ const Navbar = () => {
   const [isMobilePodcastOpen, setIsMobilePodcastOpen] = useState(false);
 
   const eventsRef = useRef(null);
+  const academicsRef = useRef(null);
 
   useEffect(() => {
     function handleClickOutside(e) {
-      if (eventsRef.current && !eventsRef.current.contains(e.target)) {
+      if (eventsRef.current && !eventsRef.current.contains(e.target) &&
+          academicsRef.current && !academicsRef.current.contains(e.target)) {
         setIsEventsOpen(false);
         setIsStudentsOpen(false);
         setIsInnosphereOpen(false);
@@ -116,9 +118,36 @@ const Navbar = () => {
 
       {/* Desktop Nav */}
       <div className="bg-[#1a1a36] text-white p-3 justify-center space-x-6 text-md hidden md:flex">
-        <NavLink to="/" className="px-6 hover:text-amber-400">Home</NavLink>
-        <NavLink to="/about_us" className="px-6 hover:text-blue-400">About</NavLink>
-        <NavLink to="/news" className="px-6 hover:text-blue-400">News</NavLink>
+        <NavLink 
+          to="/" 
+          className={({ isActive }) => 
+            `px-6 hover:text-amber-400 transition-colors duration-200 ${
+              isActive ? 'text-amber-400 border-b-2 border-amber-400 pb-1' : 'text-white'
+            }`
+          }
+        >
+          Home
+        </NavLink>
+        <NavLink 
+          to="/about_us" 
+          className={({ isActive }) => 
+            `px-6 hover:text-amber-400 transition-colors duration-200 ${
+              isActive ? 'text-amber-400 border-b-2 border-amber-400 pb-1' : 'text-white'
+            }`
+          }
+        >
+          About
+        </NavLink>
+        <NavLink 
+          to="/news" 
+          className={({ isActive }) => 
+            `px-6 hover:text-amber-400 transition-colors duration-200 ${
+              isActive ? 'text-amber-400 border-b-2 border-amber-400 pb-1' : 'text-white'
+            }`
+          }
+        >
+          News
+        </NavLink>
 
         <div className="relative z-50" ref={eventsRef}>
   <button
@@ -127,7 +156,7 @@ const Navbar = () => {
       setIsStudentsOpen(false);
       setIsScholarshipOpen(false);
     }}
-    className="hover:text-blue-400 flex items-center gap-1 px-6"
+    className="hover:text-amber-400 flex items-center gap-1 px-6"
   >
     Activities
     <FaChevronDown
@@ -249,13 +278,13 @@ const Navbar = () => {
 </div>
 
 
-        <div className="relative z-50">
+        <div className="relative z-50" ref={academicsRef}>
           <button
             onClick={() => {
               setIsStudentsOpen(!isStudentsOpen);
               setIsEventsOpen(false);
             }}
-            className="hover:text-blue-400 flex items-center gap-1 px-6"
+            className="hover:text-amber-400 flex items-center gap-1 px-6"
           >
             Academics <FaChevronDown className={`${isStudentsOpen ? "rotate-180" : ""}`} />
           </button>
@@ -270,7 +299,16 @@ const Navbar = () => {
           )}
         </div>
 
-        <NavLink to="/contact" className="px-6 hover:text-blue-400">Contact</NavLink>
+        <NavLink 
+          to="/contact" 
+          className={({ isActive }) => 
+            `px-6 hover:text-amber-400 transition-colors duration-200 ${
+              isActive ? 'text-amber-400 border-b-2 border-amber-400 pb-1' : 'text-white'
+            }`
+          }
+        >
+          Contact
+        </NavLink>
       </div>
 
       {/* Mobile Menu */}
@@ -284,9 +322,39 @@ const Navbar = () => {
               </button>
             </div>
             <nav className="flex flex-col gap-3 text-lg font-semibold">
-              <NavLink to="/" onClick={closeMenu} className="hover:text-amber-500">Home</NavLink>
-              <NavLink to="/about_us" onClick={closeMenu} className="hover:text-blue-500">About</NavLink>
-              <NavLink to="/news" onClick={closeMenu} className="hover:text-blue-500">News</NavLink>
+              <NavLink 
+                to="/" 
+                onClick={closeMenu} 
+                className={({ isActive }) => 
+                  `hover:text-amber-500 transition-colors duration-200 ${
+                    isActive ? 'text-amber-500 border-l-4 border-amber-500 pl-2' : 'text-gray-800'
+                  }`
+                }
+              >
+                Home
+              </NavLink>
+              <NavLink 
+                to="/about_us" 
+                onClick={closeMenu} 
+                className={({ isActive }) => 
+                  `hover:text-amber-500 transition-colors duration-200 ${
+                    isActive ? 'text-amber-500 border-l-4 border-amber-500 pl-2' : 'text-gray-800'
+                  }`
+                }
+              >
+                About
+              </NavLink>
+              <NavLink 
+                to="/news" 
+                onClick={closeMenu} 
+                className={({ isActive }) => 
+                  `hover:text-amber-500 transition-colors duration-200 ${
+                    isActive ? 'text-amber-500 border-l-4 border-amber-500 pl-2' : 'text-gray-800'
+                  }`
+                }
+              >
+                News
+              </NavLink>
 
               {/* Mobile Activities */}
               <button onClick={() => setIsMobileEventsOpen(!isMobileEventsOpen)} className="flex justify-between">
@@ -350,8 +418,18 @@ const Navbar = () => {
                 </div>
               )}
 
-              <a href="https://oieiitm.org/ms_entrepreneurship/home" target="_blank" rel="noreferrer" className="hover:text-blue-500">Academics</a>
-              <NavLink to="/contact" onClick={closeMenu} className="hover:text-blue-500">Contact</NavLink>
+              <a href="https://oieiitm.org/ms_entrepreneurship/home" target="_blank" rel="noreferrer" className="hover:text-amber-500">Academics</a>
+              <NavLink 
+                to="/contact" 
+                onClick={closeMenu} 
+                className={({ isActive }) => 
+                  `hover:text-amber-500 transition-colors duration-200 ${
+                    isActive ? 'text-amber-500 border-l-4 border-amber-500 pl-2' : 'text-gray-800'
+                  }`
+                }
+              >
+                Contact
+              </NavLink>
             </nav>
           </div>
         </div>
