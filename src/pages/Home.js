@@ -6,6 +6,10 @@ import {
   FaCalendarAlt,
   FaClock,
   FaMapMarkerAlt,
+  FaHandHolding,
+  FaHandMiddleFinger,
+  FaHandPointLeft,
+  FaHandPointRight,
 } from "react-icons/fa";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
@@ -38,8 +42,27 @@ const Home = () => {
       <FaCalendarAlt className="inline text-blue-600 mr-1" /> 4th August 2025
       {" — "}
       <FaClock className="inline text-yellow-500 mr-1" /> 5:00 PM onwards
-      {" — "}
-      <FaMapMarkerAlt className="inline text-green-600 mr-1" /> Sudha & Shankar Innovation Hub */}
+      {" — "} */}
+      <span className="mx-6">
+  <FaHandPointRight className="inline text-green-600 mr-1" /> 
+  Call for Applications for Nirmaan Feb'26 Cohort — 
+  <a href="https://traktor.sieiitm.org" className="font-semibold underline">
+    Apply Now
+  </a>
+</span>
+
+<span className="mx-6">
+  <FaHandPointRight className="inline text-green-600 mr-1" /> 
+  Call for Applications for Nirmaan Feb'26 Cohort — 
+  <a href="https://traktor.sieiitm.org" className="font-semibold underline">Apply Now</a>
+</span>
+
+<span className="mx-6">
+  <FaHandPointRight className="inline text-green-600 mr-1" /> 
+  Call for Applications for Nirmaan Feb'26 Cohort — 
+  <a href="https://traktor.sieiitm.org" className="font-semibold underline">Apply Now</a>
+</span>
+
     </>
   ];
 
