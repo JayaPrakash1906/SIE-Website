@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import {Heart,  User,  Clock,  MessageCircle,  Eye,  MoreHorizontal,  ChevronLeft,  ChevronRight,} from 'lucide-react';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
-import img1 from '../assets/news15.png'; // Replace with your actual image import
-
+import img1 from '../assets/News/news2.png';
+import img2 from '../assets/News/news1.jpg'; 
+import img3 from '../assets/News/news3.jpg'; // Replace with your actual image import
+import img4 from "../assets/News/news4.JPG"
+import img5 from "../assets/News/news5.jpg"
 // Single News Card
 const NewsCard = ({ article }) => {
   return (
@@ -13,7 +16,7 @@ const NewsCard = ({ article }) => {
         <img
           src={article.image}
           alt={article.title}
-          className="w-full h-full max-h-[250px] object-cover"
+          className={`w-full h-full max-h-[250px] object-cover ${article.id === 4 ? 'object-top' : ''}`}
         />
       </div>
 
@@ -76,16 +79,62 @@ const News = () => {
 
   const newsData = [
     {
-      id: 1,
+      id: 5,
+      title: 'New Advisors for NIRMAAN & CFI, IIT Madras ',
+      date: 'Nov 21, 2025',
+      readTime: '4 min read',
+      subtitle:' Prof. Murugaiyan Amirthalingam takes charge as Advisor of NIRMAAN and Prof. Manish Anand as Advisor of CFI, ushering in a new phase of leadership to further strengthen innovation and entrepreneurship at IIT Madras.',
+      views: 120,
+      comments: 8,
+      image: img5,
+      link: '',
+    },
+    {
+      id: 4,
+      title: 'Leadership Transition at SIE, IIT Madras',
+      date: 'Nov 2, 2025',
+      readTime: '4 min read',
+      subtitle:' Prof. Satyanarayanan Seshadri assumes charge as Head of SIE, IIT Madras, succeeding Prof. Prabhu Rajagopal and building on his remarkable contributions to strengthening the innovation and entrepreneurship ecosystem.',
+      views: 120,
+      comments: 8,
+      image: img4,
+      link: '',
+    },
+    {
+      id: 3,
+      title: ' Research Conclave 2025',
+      date: 'Nov 2, 2025',
+      readTime: '4 min read',
+      subtitle:
+        ' The Centre for Innovation (CFI), IIT Madras successfully hosted Research Conclave 2025 on 2nd November 2025, bringing together a vibrant community of students, researchers, and innovators for a full day of learning, collaboration, and knowledge exchange.',
+      views: 120,
+      comments: 8,
+      image: img3,
+      link: 'https://www.linkedin.com/posts/activity-7351133381549592578-MVzu?utm_source=share&utm_medium=member_desktop&rcm=ACoAADFikn4B6jA0Ct1Y84TowFZRR2JHg75s9fg',
+    },
+    {
+      id: 2,
       title: 'Launch of SIE ',
       date: 'August 4, 2025',
       readTime: '5 min read',
       subtitle:
         ' IIT Madras Launches the School of Innovation and Entrepreneurship',
-      views: 120,
+      views: 180,
       comments: 5,
       image: img1,
       link: 'https://www.linkedin.com/posts/activity-7358405925990273024-0eYQ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADFikn4B6jA0Ct1Y84TowFZRR2JHg75s9fg',
+    },
+    {
+      id: 1,
+      title: 'National Security Advisor Shri Ajit Doval Visits SSIH ',
+      date: 'July 11, 2025',
+      readTime: '2 min read',
+      subtitle:
+        ' National Security Advisor Shri Ajit Doval visited IIT Madras’s Innovation Hub, recognizing its impactful student-led startups and thriving innovation ecosystem',
+      views: 120,
+      comments: 5,
+      image: img2,
+      link: 'https://www.linkedin.com/posts/activity-7351133381549592578-MVzu?utm_source=share&utm_medium=member_desktop&rcm=ACoAADFikn4B6jA0Ct1Y84TowFZRR2JHg75s9fg',
     },
     
     // Add more news items here...

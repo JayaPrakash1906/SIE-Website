@@ -6,6 +6,11 @@ import About from './pages/About';
 import News from './pages/news';
 import Contact from './pages/contact';
 import Initiatives from './pages/duplicate';
+import Mentors from './pages/Mentors';
+import UGFIR from './pages/ugfir'
+import PGFIR from './pages/pgfir'
+import Academics from './pages/academics'
+import Courses from './pages/courses'
 
 function App() {
   return (
@@ -17,9 +22,11 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/initiatives" element={<Initiatives />} />
-          {/* Add more routes as needed */}
-          
-
+          <Route path="/mentors" element={<Mentors />} />
+          <Route path="/scholorship/ugfir" element={<UGFIR />}/>
+          <Route path="/scholorship/pgfir" element={<PGFIR />}/>
+          <Route path="/academics/overview" element={<Academics />}/>
+          <Route path="/academics/courses" element={<Courses />}/>
         </Routes>
       </div>
     </BrowserRouter>
