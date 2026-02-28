@@ -321,18 +321,18 @@ const Navbar = () => {
                 >
                   Overview
                 </a>
-                {/* <a
+                 <a
                   href="/academics/courses"
                   className="block px-4 py-2 hover:bg-amber-400"
                 >
                   Courses
                 </a>
                 <a
-                  href="/academics/overview"
+                  href="/academics/awards"
                   className="block px-4 py-2 hover:bg-amber-400"
                 >
-                  M.S(E) Program
-                </a> */}
+                  Awards
+                </a> 
               </li>
             </ul>
           )}

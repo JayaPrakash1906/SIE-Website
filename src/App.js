@@ -11,6 +11,7 @@ import UGFIR from './pages/ugfir'
 import PGFIR from './pages/pgfir'
 import Academics from './pages/academics'
 import Courses from './pages/courses'
+import AcademicAwards from './pages/academic_awards'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/scholorship/pgfir" element={<PGFIR />}/>
           <Route path="/academics/overview" element={<Academics />}/>
           <Route path="/academics/courses" element={<Courses />}/>
+          <Route path="/academics/awards" element={<AcademicAwards/>}/>
         </Routes>
       </div>
     </BrowserRouter>

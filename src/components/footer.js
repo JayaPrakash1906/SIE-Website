@@ -41,7 +41,7 @@ const Footer = () => {
       </div>
       {/* Bottom Bar */}
       <div className="text-center text-xs text-gray-500 mt-6">
-        © 2025 School of Innovation & Entrepreneurship. All rights reserved
+        © 2026 School of Innovation & Entrepreneurship. All rights reserved
       </div>
     </footer>
   );

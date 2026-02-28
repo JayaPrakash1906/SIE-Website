@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5584327f.css",
-    "main.js": "/static/js/main.12704bc8.js",
+    "main.css": "/static/css/main.7b11259c.css",
+    "main.js": "/static/js/main.fb6661dc.js",
     "static/js/453.258b012d.chunk.js": "/static/js/453.258b012d.chunk.js",
     "static/media/vision.jpg": "/static/media/vision.58c6a2eca6ee01a2f93c.jpg",
     "static/media/iitm_logo.png": "/static/media/iitm_logo.0105d85b3475030de3d8.png",
@@ -24,6 +24,7 @@
     "static/media/Pradeep.png": "/static/media/Pradeep.6fd361068435a0f9f564.png",
     "static/media/news1.jpg": "/static/media/news1.b6882e34b6dd120d573a.jpg",
     "static/media/news5.jpg": "/static/media/news5.ba8bbb524755ced483ed.jpg",
+    "static/media/Gopal.jpg": "/static/media/Gopal.0ed49581f863befef82e.jpg",
     "static/media/kgmg2025-3.jpg": "/static/media/kgmg2025-3.87699e9da82a538c1685.jpg",
     "static/media/kgmg2025-4.jpg": "/static/media/kgmg2025-4.9a216ed1bbef06e4ce14.jpg",
     "static/media/Anveshak-2026.jpeg": "/static/media/Anveshak-2026.6cfbd1aa763349e2deb3.jpeg",
@@ -123,12 +124,12 @@
     "static/media/hyperverge.webp": "/static/media/hyperverge.0d916a5ebaafd30b2687.webp",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.5584327f.css.map": "/static/css/main.5584327f.css.map",
-    "main.12704bc8.js.map": "/static/js/main.12704bc8.js.map",
+    "main.7b11259c.css.map": "/static/css/main.7b11259c.css.map",
+    "main.fb6661dc.js.map": "/static/js/main.fb6661dc.js.map",
     "453.258b012d.chunk.js.map": "/static/js/453.258b012d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5584327f.css",
-    "static/js/main.12704bc8.js"
+    "static/css/main.7b11259c.css",
+    "static/js/main.fb6661dc.js"
   ]
 }
