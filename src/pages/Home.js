@@ -221,22 +221,19 @@ const Home = () => {
       {" — "} */}
       <span className="mx-6">
   <FaHandPointRight className="inline text-green-600 mr-1" /> 
-  Call for Applications for Nirmaan Feb'26 Cohort — 
-  <a href="https://traktor.sieiitm.org" className="font-semibold underline">
-    Application Closed
-  </a>
+  Application Open for MS(Entrepreneurship) July-2026  — 
+  <a href="https://forms.gle/dVeyzAtSLNB3PiSN8" className="font-semibold underline">Apply here</a>
 </span>
 
 <span className="mx-6">
   <FaHandPointRight className="inline text-green-600 mr-1" /> 
-  Call for Applications for Nirmaan Feb'26 Cohort — 
-  <a href="https://traktor.sieiitm.org" className="font-semibold underline">Application Closed</a>
+  Application Open for MS(Entrepreneurship) July-2026  — 
+  <a href="https://forms.gle/dVeyzAtSLNB3PiSN8" className="font-semibold underline">Apply here  </a>
 </span>
-
 <span className="mx-6">
   <FaHandPointRight className="inline text-green-600 mr-1" /> 
-  Call for Applications for Nirmaan Feb'26 Cohort — 
-  <a href="https://traktor.sieiitm.org" className="font-semibold underline">Application Closed</a>
+  Application Open for MS(Entrepreneurship) July-2026  — 
+  <a href="https://forms.gle/dVeyzAtSLNB3PiSN8" className="font-semibold underline"> Apply here  </a>
 </span>
 
     </>
