@@ -71,7 +71,34 @@ const Academics = () => {
         Currently we have 43 students who are well on their way to discover exciting opportunities in the 
         projects they applied for. Out of them, 4 are already incorporating their start-up and a few more are in the discovery stage.
         </p>
+
+        <div className="p-6 text-left">
+  <h2 className="text-xl font-semibold mb-4 text-sky-700">
+    Eligibility to Apply
+  </h2>
+
+  <ul className="list-disc pl-6 space-y-2 text-gray-700">
+    <li>B.Tech / B.E. or any postgraduate degree (M.Com / M.A.)</li>
+    <li>Must have graduated from a recognized university</li>
+    <li>
+      All candidates applying for the MS in Entrepreneurship must submit a
+      startup proposal
+    </li>
+  </ul>
+
+  <div className="flex justify-center mt-6">
+    <a
+      href="https://forms.gle/SHQ9V1odSujjbYHp6"  target="_blank"
+        rel="noreferrer"
+      className="bg-sky-600 text-white px-6 py-2 rounded-md font-medium hover:bg-sky-700 transition duration-200"
+    >
+      Click Here to Apply
+    </a>
+  </div>
+</div>
       </div>
+
+      
 
       {/* Projects Section */}
       <div className="w-full px-4 sm:px-6 lg:px-20 pb-16">

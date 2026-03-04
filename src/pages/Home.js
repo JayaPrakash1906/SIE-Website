@@ -219,21 +219,22 @@ const Home = () => {
       {" — "}
       <FaClock className="inline text-yellow-500 mr-1" /> 5:00 PM onwards
       {" — "} */}
-      <span className="mx-6">
+      {/* <span className="mx-6">
   <FaHandPointRight className="inline text-green-600 mr-1" /> 
   Application Open for MS(Entrepreneurship) July-2026  — 
-  <a href="https://forms.gle/dVeyzAtSLNB3PiSN8" className="font-semibold underline">Apply here</a>
+  <a href="https://research.iitm.ac.in/" className="font-semibold underline">Apply here</a>
 </span>
 
 <span className="mx-6">
   <FaHandPointRight className="inline text-green-600 mr-1" /> 
   Application Open for MS(Entrepreneurship) July-2026  — 
-  <a href="https://forms.gle/dVeyzAtSLNB3PiSN8" className="font-semibold underline">Apply here  </a>
-</span>
+  <a href="https://research.iitm.ac.in/" className="font-semibold underline">Apply here  </a>
+</span> */}
 <span className="mx-6">
   <FaHandPointRight className="inline text-green-600 mr-1" /> 
-  Application Open for MS(Entrepreneurship) July-2026  — 
-  <a href="https://forms.gle/dVeyzAtSLNB3PiSN8" className="font-semibold underline"> Apply here  </a>
+  Applications Open for MS (Entrepreneurship) – July 2026 | Two-Step Process: Register & Submit Application | 
+  <a href="https://research.iitm.ac.in/" target="_blank"
+        rel="noreferrer" className="font-semibold underline"> Apply Here  </a>
 </span>
 
     </>
