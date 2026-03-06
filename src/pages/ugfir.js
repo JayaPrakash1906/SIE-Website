@@ -272,7 +272,7 @@ const cohortData = {
 };
 
 const Ugfir_home = () => {
-  const [selectedYear, setSelectedYear] = useState("2024");
+  const [selectedYear, setSelectedYear] = useState("2025");
 
   return (
     <div className="bg-gray-50">
@@ -379,7 +379,7 @@ const Ugfir_home = () => {
           </li>
         </ul>
       </div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-20 lg:px-32 font-dmsans">
+      {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-20 lg:px-32 font-dmsans">
         <p className="text-sm sm:text-base text-justify mb-4 mt-4">
           If you’re a recent IIT Madras undergraduate with a promising startup
           idea and the drive to build something impactful,
@@ -391,7 +391,7 @@ const Ugfir_home = () => {
             <strong>Applications are now open – best of luck!</strong>
           </div>
         </p>
-      </div>
+      </div> */}
 
       {/* --- Past Recipients Section --- */}
       <div className="text-center py-10 px-4 sm:px-6 mt-12">

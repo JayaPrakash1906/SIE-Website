@@ -3,6 +3,7 @@ import Navbar from '../components/navbar'
 import { FaLinkedin } from 'react-icons/fa'
 import img1 from "../assets/PGFIR/kgmg2025-1.jpg"
 import img2 from "../assets/UGFIR/ugfir_2025-6.jpg"
+import Footer from '../components/footer'
 
 const awards = [
   {
@@ -126,6 +127,7 @@ const AcademicAwards = () => {
           </div>
         ))}
       </div>
+      <Footer/>
     </div>
   )
 }

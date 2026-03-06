@@ -10,6 +10,7 @@ import {
   List,
   GraduationCap
 } from "lucide-react";
+import Footer from "../components/footer";
 
 const courseData = [
   {
@@ -430,6 +431,7 @@ const Courses = () => {
           </div>
         ))}
       </div>
+      <Footer/>
     </div>
   );
 };

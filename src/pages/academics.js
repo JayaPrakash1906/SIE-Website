@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 const projects = [
  { topic: "Development of alternative battery technology", description: "Design and development of high-performance zinc-based (Zn-air and Zn-ion) batteries addressing corrosion, dendrite formation, and efficiency challenges for next-generation energy storage.", }, 
@@ -24,7 +25,13 @@ const projects = [
  { topic: " Lithium-ion Battery Cathode Active Material Manufacturing", description: "Synthesis and development of LFP, NMC, and Ni-rich cathode active materials for lithium-ion batteries using a novel scalable rapid synthesis process.Aims to enhance material performance, reduce production time, and enable cost-effective large-scale manufacturing.", },
  { topic: "HumanVoice: An Adaptive Human-like Voice AI System for Personalized Child Learning and Ecosystem Development ", description: "Development of HumanVoice, an AI-powered voice companion that delivers emotionally adaptive, curriculum-aligned learning experiences for children aged 3–12.Combines human-like neural speech, real-time personalization, and multilingual content to extend quality education beyond the classroom.", },
  { topic: "Development of a Carbon Credit Trading System ", description: "Development of a financial and market architecture for voluntary carbon trading with a digital platform for transparent credit ownership and exchange. Incorporates revenue-sharing models and portfolio management tools to enable efficient, scalable carbon market participation.", },
- 
+ { topic: "Development of Electrically-driven Single Photon Emitters for Quantum Communication ", description: "Development of electrically driven on-demand single-photon sources for scalable quantum communication and secure quantum key distribution (QKD). Focuses on integrating compact quantum light emitters into photonic circuits and fiber networks, advancing prototypes toward real-world quantum technology applications.", },
+ { topic: "Bridging Discovery and Delivery: Scalable Innovation in Cancer Drug Development", description: "Development of scalable, GMP-ready manufacturing platforms and smart quality systems to enable reliable and affordable production of novel cancer therapeutics. Focuses on strategic translation from lab to market through regulatory alignment, industry partnerships, and sustainable business models.", },
+ { topic: "Managing next generation autonomous factories using digital twins ", description: "Development of a digital twin platform for autonomous factories by integrating 3D printers, CNC machines, robotic arms, and AMRs with real-time data and detailed CAD models. Enables advanced simulation, adaptive control, and real-time optimization to improve efficiency and intelligent decision-making in smart manufacturing.", },
+ { topic: " Design and Implementation of Real Time Digital Twin Based Kidney Disease Diagnostic Device", description: "Development of a digital twin–based kidney health monitoring system for diabetes patients including (i) personalized kidney function monitoring sensors, (ii) predictive diagnostics, and (iii) clinical data–driven research insights. Incorporates a patient-specific wearable ultrasound patch for continuous, biocompatible, and real-time monitoring of kidney health.", },
+  { topic: "Optimal Battery Thermal Management System Design with Performance–Cost Trade-Off for Second-Life Battery Packs in Solar PV-Based Rural EV Charging Stations ", description: "Development of an optimized battery thermal management system (BTMS) for second-life lithium-ion battery packs used in PV-integrated rural EV charging stations. Focuses on electro-thermal modeling, thermal architecture evaluation, and cost–performance optimization to enhance safety, reliability, and circular battery utilization.", },
+//  { topic: " ", description: "", },
+
 ];
 
 const Academics = () => {
@@ -139,6 +146,7 @@ const Academics = () => {
           </table>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
