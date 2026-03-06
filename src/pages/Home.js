@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { FaBullhorn, FaArrowUp, FaRocket, FaHandPointRight, FaBullseye, FaTrophy, FaAward, FaMedal, FaChevronLeft, FaChevronRight, FaRupeeSign, FaUsers, FaIndustry, FaBuilding, FaChartLine, FaCalendarAlt } from "react-icons/fa";
+import { FaBullhorn, FaArrowUp, FaRocket, FaHandPointRight, FaBullseye, FaTrophy, FaAward, FaMedal, FaChevronLeft, FaChevronRight, FaRupeeSign, FaUsers, FaIndustry, FaBuilding, FaChartLine, FaCalendarAlt, FaTimes } from "react-icons/fa";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import img1 from "../assets/bgimage.jpeg";
 import img2 from "../assets/vision.jpg";
-import img3 from "../assets/mission.avif";
+import img3 from "../assets/Delta_Expo_Invite.jpg";
 import img4 from "../assets/DSC.JPG";
 import nirmaanImg from "../assets/nirmaan_pic.jpg";
 import cfiImg from "../assets/agnirath.jpg";
@@ -190,6 +190,7 @@ function getInitials(name = "") {
 const Home = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
   const [currentAwardIndex, setCurrentAwardIndex] = useState(0);
+  const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -197,6 +198,15 @@ const Home = () => {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    // Show popup after 3 seconds on every home page visit
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
@@ -734,6 +744,25 @@ const Home = () => {
         >
           <FaArrowUp />
         </button>
+      )}
+
+      {/* Popup Modal */}
+      {showPopup && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white p-4 rounded-lg max-w-md mx-4 relative">
+            <button
+              onClick={() => setShowPopup(false)}
+              className="absolute top-2 right-2 text-red-500 hover:text-gray-700"
+            >
+              <FaTimes />
+            </button>
+            <img
+              src={img3}
+              alt="Popup Image"
+              className="w-full h-auto rounded"
+            />
+          </div>
+        </div>
       )}
 
       <Footer />
