@@ -340,7 +340,7 @@ const Navbar = () => {
                     <li>
                       {renderLink(
                         "Overview",
-                        "/academics/overview/ms(e)",
+                        "/academics/overview",
                         "block px-4 py-2 hover:bg-amber-300",
                         () => {
                           setIsStudentsOpen(false);

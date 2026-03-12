@@ -246,7 +246,7 @@ const PhdAdmissions = () => {
             Deadline
           </td>
           <td className="p-3">
-            To be announced
+            30/03/2026
           </td>
         </tr>
       </tbody>
@@ -255,10 +255,21 @@ const PhdAdmissions = () => {
 
   {/* Additional text section */}
   <div className="mt-6 text-gray-700 leading-relaxed">
-    <p>
-      Interested candidates are invited to submit their applications through the 
-      IIT Madras PhD admissions portal.
-    </p>
+    
+  <p>
+  Interested candidates are invited to submit their applications through the{" "}
+  <a
+    href="https://research.iitm.ac.in/"
+    className="text-blue-600 underline"
+    target="_blank"
+    rel="noreferrer"
+  >
+    IIT Madras PhD admissions portal
+  </a>.
+  After completing the application, please fill out the Google Form below.
+</p>
+
+    
     <p className="mt-2">
       More details on eligibility, application process, and deadlines will be 
       available on the website.

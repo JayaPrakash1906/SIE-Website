@@ -268,6 +268,27 @@ const Home = () => {
     </>
   ];
 
+  const currentEvents = [
+    {
+      title: "MS (Entrepreneurship) – July 2026 admissions open",
+      date: "2026",
+      link: "https://research.iitm.ac.in/",
+      tag: "NEW",
+    },
+    {
+      title: "PhD – July 2026 admissions open",
+      date: "2026",
+      link: "https://research.iitm.ac.in/",
+      tag: "NEW",
+    },
+    // {
+    //   title: "Latest updates from SIE",
+    //   date: "",
+    //   link: "/news",
+    //   tag: "",
+    // },
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -311,6 +332,55 @@ const Home = () => {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black opacity-50" />
+        </div>
+
+        {/* Current Events (responsive) */}
+        <div className="absolute left-4 right-4 bottom-4 z-20 md:left-auto md:right-6 md:top-1/2 md:bottom-auto md:-translate-y-1/2 md:w-[360px]">
+          <div className="rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md shadow-xl overflow-hidden">
+            <div className="px-4 py-3 flex items-center justify-between border-b border-white/10">
+              <span className="text-white font-semibold tracking-wide">
+                Current Events
+              </span>
+              <a
+                href=""
+                className="text-amber-300 hover:text-amber-200 text-xs font-semibold underline underline-offset-2"
+              >
+                View all
+              </a>
+            </div>
+            <div className="px-4 py-3 space-y-2.5">
+              {currentEvents.map((ev, idx) => {
+                const isExternal = /^https?:\/\//i.test(ev.link);
+                return (
+                  <div key={idx} className="flex items-start gap-2">
+                    <span className="mt-1.5 h-2 w-2 rounded-full bg-amber-300 shrink-0" />
+                    <div className="min-w-0">
+                      <a
+                        href={ev.link}
+                        target={isExternal ? "_blank" : undefined}
+                        rel={isExternal ? "noreferrer" : undefined}
+                        className="text-white text-sm font-medium hover:text-amber-200 transition-colors line-clamp-2"
+                      >
+                        {ev.title}
+                      </a>
+                      <div className="mt-1 flex items-center gap-2">
+                        {ev.tag ? (
+                          <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-red-500/90 text-white">
+                            {ev.tag}
+                          </span>
+                        ) : null}
+                        {ev.date ? (
+                          <span className="text-[11px] text-white/70">
+                            {ev.date}
+                          </span>
+                        ) : null}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
 
         <div className="relative z-10 flex items-center justify-center h-full px-4">

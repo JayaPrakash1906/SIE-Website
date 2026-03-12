@@ -26,7 +26,7 @@ function App() {
           <Route path="/mentors" element={<Mentors />} />
           <Route path="/scholorship/ugfir" element={<UGFIR />}/>
           <Route path="/scholorship/pgfir" element={<PGFIR />}/>
-          <Route path="/academics/overview/ms(e)" element={<Academics_mse />}/>
+          <Route path="/academics/overview" element={<Academics_mse />}/>
           <Route path="/academics/courses" element={<Courses />}/>
           <Route path="/academics/awards" element={<AcademicAwards/>}/>
           <Route path="/academics/overview/phd" element={<Academics_phd />}/>
