@@ -13,6 +13,9 @@ const Navbar = () => {
   const [isScholarshipOpen, setIsScholarshipOpen] = useState(false);
   const [isMagazineOpen, setIsMagazineOpen] = useState(false);
   const [isPodcastOpen, setIsPodcastOpen] = useState(false);
+  const [isMobileAcademicsOpen, setIsMobileAcademicsOpen] = useState(false);
+  const [isAcademicsMseOpen, setIsAcademicsMseOpen] = useState(false);
+  const [isMobileAcademicsMseOpen, setIsMobileAcademicsMseOpen] = useState(false);
 
   const [isMobileEventsOpen, setIsMobileEventsOpen] = useState(false);
   const [isMobileInnosphereOpen, setIsMobileInnosphereOpen] = useState(false);
@@ -33,6 +36,7 @@ const Navbar = () => {
         setIsScholarshipOpen(false);
         setIsMagazineOpen(false);
         setIsPodcastOpen(false);
+        setIsAcademicsMseOpen(false);
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
@@ -57,6 +61,8 @@ const Navbar = () => {
     setIsMobileScholarshipOpen(false);
     setIsMobileMagazineOpen(false);
     setIsMobilePodcastOpen(false);
+    setIsMobileAcademicsOpen(false);
+    setIsMobileAcademicsMseOpen(false);
   };
 
   const activitiesLinks = [
@@ -306,6 +312,7 @@ const Navbar = () => {
             onClick={() => {
               setIsStudentsOpen(!isStudentsOpen);
               setIsEventsOpen(false);
+              setIsAcademicsMseOpen(false);
             }}
             className="hover:text-amber-400 flex items-center gap-1 px-6"
           >
@@ -314,25 +321,68 @@ const Navbar = () => {
           </button>
           {isStudentsOpen && (
             <ul className="absolute top-full mt-1 left-0 w-72 bg-white text-black font-medium shadow-lg border-t border-black z-50">
-              <li className="border-b border-black">
-                <a
-                  href="/academics/overview"
-                  className="block px-4 py-2 hover:bg-amber-400"
+              <li className="relative border-b border-black last:border-none">
+                <button
+                  onClick={() => {
+                    setIsAcademicsMseOpen(!isAcademicsMseOpen);
+                  }}
+                  className="w-full text-left px-4 py-2 hover:bg-amber-400 flex justify-between items-center"
                 >
-                  Overview
-                </a>
-                 <a
-                  href="/academics/courses"
-                  className="block px-4 py-2 hover:bg-amber-400"
-                >
-                  Courses
-                </a>
-                <a
-                  href="/academics/awards"
-                  className="block px-4 py-2 hover:bg-amber-400"
-                >
-                  Awards
-                </a> 
+                  MS(E)
+                  <FaChevronDown
+                    className={`ml-2 text-xs transition-transform duration-300 ${
+                      isAcademicsMseOpen ? "rotate-[270deg]" : "rotate-0"
+                    }`}
+                  />
+                </button>
+                {isAcademicsMseOpen && (
+                  <ul className="absolute left-full top-0 ml-1 w-48 bg-white border border-black shadow-lg z-50">
+                    <li>
+                      {renderLink(
+                        "Overview",
+                        "/academics/overview/ms(e)",
+                        "block px-4 py-2 hover:bg-amber-300",
+                        () => {
+                          setIsStudentsOpen(false);
+                          setIsAcademicsMseOpen(false);
+                        }
+                      )}
+                    </li>
+                    <li>
+                      {renderLink(
+                        "Courses",
+                        "/academics/courses",
+                        "block px-4 py-2 hover:bg-amber-300",
+                        () => {
+                          setIsStudentsOpen(false);
+                          setIsAcademicsMseOpen(false);
+                        }
+                      )}
+                    </li>
+                    <li>
+                      {renderLink(
+                        "Awards",
+                        "/academics/awards",
+                        "block px-4 py-2 hover:bg-amber-300",
+                        () => {
+                          setIsStudentsOpen(false);
+                          setIsAcademicsMseOpen(false);
+                        }
+                      )}
+                    </li>
+                  </ul>
+                )}
+              </li>
+              <li className="border-b border-black last:border-none">
+                {renderLink(
+                  "PhD",
+                  "/academics/overview/phd",
+                  "block px-4 py-2 hover:bg-amber-400",
+                  () => {
+                    setIsStudentsOpen(false);
+                    setIsAcademicsMseOpen(false);
+                  }
+                )}
               </li>
             </ul>
           )}
@@ -483,13 +533,38 @@ const Navbar = () => {
                 </div>
               )}
 
-              <a
-                href="/academics/overview"
-               
-                className="hover:text-amber-500"
+              <button
+                onClick={() => setIsMobileAcademicsOpen(!isMobileAcademicsOpen)}
+                className="flex justify-between items-center w-full"
               >
-                Academics
-              </a>
+                <span className="hover:text-amber-500">Academics</span>
+                <FaChevronDown
+                  className={`${isMobileAcademicsOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+              {isMobileAcademicsOpen && (
+                <div className="ml-4 mt-1">
+                  <button
+                    onClick={() => {
+                      setIsMobileAcademicsMseOpen(!isMobileAcademicsMseOpen);
+                    }}
+                    className="flex justify-between items-center w-full py-1"
+                  >
+                    <span>MS(E)</span>
+                    <FaChevronDown
+                      className={`${isMobileAcademicsMseOpen ? "rotate-180" : ""}`}
+                    />
+                  </button>
+                  {isMobileAcademicsMseOpen && (
+                    <div className="ml-4">
+                      {renderLink("Overview", "/academics/overview/ms(e)", "block py-1", closeMenu)}
+                      {renderLink("Courses", "/academics/courses", "block py-1", closeMenu)}
+                      {renderLink("Awards", "/academics/awards", "block py-1", closeMenu)}
+                    </div>
+                  )}
+                  {renderLink("PhD", "/academics/overview/phd", "block py-1 mt-2", closeMenu)}
+                </div>
+              )}
               <NavLink
                 to="/contact"
                 onClick={closeMenu}

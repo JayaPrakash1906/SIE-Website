@@ -246,7 +246,25 @@ const Home = () => {
   <a href="https://research.iitm.ac.in/" target="_blank"
         rel="noreferrer" className="font-semibold underline"> Apply Here  </a>
 </span>
+<span className="mx-6">
+<span className="border border-red-500 text-red-600 text-xs font-semibold px-2 py-1 mr-2 rounded">
+  NEW
+</span>
 
+  <FaHandPointRight className="inline text-green-600 mr-1" />
+  
+  Applications Open for <span className="font-semibold">PhD</span> – July 2026 | 
+  Two-Step Process: Register & Submit Application |
+
+  <a
+    href="https://research.iitm.ac.in/"
+    target="_blank"
+    rel="noreferrer"
+    className="font-semibold underline ml-1"
+  >
+    Apply Here
+  </a>
+</span>
     </>
   ];
 

@@ -30,8 +30,8 @@ const projects = [
  { topic: "Managing next generation autonomous factories using digital twins ", description: "Development of a digital twin platform for autonomous factories by integrating 3D printers, CNC machines, robotic arms, and AMRs with real-time data and detailed CAD models. Enables advanced simulation, adaptive control, and real-time optimization to improve efficiency and intelligent decision-making in smart manufacturing.", },
  { topic: " Design and Implementation of Real Time Digital Twin Based Kidney Disease Diagnostic Device", description: "Development of a digital twin–based kidney health monitoring system for diabetes patients including (i) personalized kidney function monitoring sensors, (ii) predictive diagnostics, and (iii) clinical data–driven research insights. Incorporates a patient-specific wearable ultrasound patch for continuous, biocompatible, and real-time monitoring of kidney health.", },
   { topic: "Optimal Battery Thermal Management System Design with Performance–Cost Trade-Off for Second-Life Battery Packs in Solar PV-Based Rural EV Charging Stations ", description: "Development of an optimized battery thermal management system (BTMS) for second-life lithium-ion battery packs used in PV-integrated rural EV charging stations. Focuses on electro-thermal modeling, thermal architecture evaluation, and cost–performance optimization to enhance safety, reliability, and circular battery utilization.", },
-//  { topic: " ", description: "", },
-
+{ topic: " Ball tracking system development for sports analytics", description: "Ball and spin tracking is a foundational technology that can make a difference to multiple sports. In this context, we intend to develop an umpire decision review system that can have the fidelity of a human umpire, while minimizing error possibility.", },
+{ topic: "Drone based air quality monitoring ", description: "Mount Kaatru device on a drone to get 3-D spatio-temporal characterization of air pollution", },
 ];
 
 const Academics = () => {
