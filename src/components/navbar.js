@@ -189,6 +189,16 @@ const Navbar = () => {
         >
           Mentors
         </NavLink>
+        {/* <NavLink
+          to="/academics/grants-winners"
+          className={({ isActive }) =>
+            `px-6 hover:text-amber-400 transition-colors duration-200 ${
+              isActive ? "text-amber-400 border-b-2 border-amber-400 pb-1" : "text-white"
+            }`
+          }
+        >
+          Grants Winners
+        </NavLink> */}
 
         {/* Activities Dropdown */}
         <div className="relative z-50" ref={eventsRef}>
@@ -432,6 +442,17 @@ const Navbar = () => {
               >
                 Mentors
               </NavLink>
+              {/* <NavLink
+                to="/academics/grants-winners"
+                onClick={closeMenu}
+                className={({ isActive }) =>
+                  `hover:text-amber-500 transition-colors duration-200 ${
+                    isActive ? "text-amber-500 border-l-4 border-amber-500 pl-2" : "text-gray-800"
+                  }`
+                }
+              >
+                Grants Winners
+              </NavLink> */}
 
               {/* Mobile Activities */}
               <button

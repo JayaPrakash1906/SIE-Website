@@ -30,6 +30,7 @@ function App() {
           <Route path="/academics/courses" element={<Courses />}/>
           <Route path="/academics/awards" element={<AcademicAwards/>}/>
           <Route path="/academics/overview/phd" element={<Academics_phd />}/>
+          
         </Routes>
       </div>
     </BrowserRouter>
