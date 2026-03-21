@@ -7,6 +7,7 @@ import img2 from '../assets/News/news1.jpg';
 import img3 from '../assets/News/news3.jpg'; // Replace with your actual image import
 import img4 from "../assets/News/news4.JPG"
 import img5 from "../assets/News/news5.jpg"
+import img6 from "../assets/News/news6.jpg"
 // Single News Card
 const NewsCard = ({ article }) => {
   return (
@@ -78,6 +79,17 @@ const News = () => {
   const itemsPerPage = 8;
 
   const newsData = [
+     {
+      id: 6,
+      title: 'Delta Expo 2026: Showcasing Innovation at IIT Madras ',
+      date: 'March 14, 2025',
+      readTime: '4 min read',
+      subtitle:' From bold ideas to real-world impact, Delta Expo 2026 is a celebration of innovation at IIT Madras, bringing together cutting-edge student startups and breakthrough technologies. Hosted by the School for Innovation and Entrepreneurship (SIE), IIT Madras, the event was inaugurated by Rajendra Vishwanath Arlekar.',
+      views: 180,
+      comments: 17,
+      image: img6,
+      link: 'https://www.linkedin.com/posts/from-bold-ideas-to-real-world-impactdelta-ugcPost-7439904929886031872-hKu_?utm_source=share&utm_medium=member_desktop&rcm=ACoAADFikn4B6jA0Ct1Y84TowFZRR2JHg75s9fg',
+    },
     {
       id: 5,
       title: 'New Advisors for NIRMAAN & CFI, IIT Madras ',

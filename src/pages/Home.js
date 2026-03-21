@@ -764,7 +764,7 @@ const Home = () => {
                 <img
                   src={awardsData[currentAwardIndex]?.image}
                   alt="Awards & recognition"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="flex items-center justify-center gap-2 flex-wrap">
