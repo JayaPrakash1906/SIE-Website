@@ -31,6 +31,7 @@ import img23 from "../assets/FundRaised/susstains.jpg"
 import img24 from "../assets/FundRaised/green_aadhaar_logo.jpg"
 import img25 from "../assets/FundRaised/grow_your_farm.jpg"
 import img26 from "../assets/FundRaised/tiq-logo.png"
+import img27 from "../assets/Awards/Pitch-2026.jpeg"
 const visionMissionVariants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
@@ -53,6 +54,21 @@ const iconVariants = {
 const AWARDS_SLIDE_INTERVAL_MS = 13000;
 
 const awardsData = [
+   {
+  icon: FaAward,
+  title: "Invention Engine Pitch Session Winners",
+  year: "2026",
+  category: "Pitch Session",
+  description: "The session featured representatives from Invention Engine, Mr. Shailendra and Mr. Aashirwad, who evaluated the participating teams. Based on their assessment, three teams were selected as winners for their outstanding performance and innovation.",
+  winners: [
+    "ScoutEdge (Mr. Satyendra Kumar)",
+    "Zeex AI (Mr. Gaurav Yadav)",
+    "Immortigen (Mr. Aayan Raj)",
+  ],
+  image: img27,
+  gradient: "from-amber-400 to-yellow-600",
+  bgGlow: "bg-amber-500/10",
+},
   {
     icon: FaTrophy,
     title: "IIT Madras Avishkar Hyperloop Wins Global Hyperloop Competition 2026",
@@ -723,9 +739,19 @@ const Home = () => {
                       <h3 className="text-xl md:text-2xl font-bold text-[#1a1a36] mb-3 leading-tight">
                         {award.title}
                       </h3>
-                      <p className="text-gray-600 leading-relaxed flex-1">
-                        {award.description}
-                      </p>
+                      <div className="text-gray-600 leading-relaxed flex-1">
+                        <p className="mb-3">{award.description}</p>
+                        {award.winners && (
+                          <div>
+                            <p className="font-semibold text-gray-700 mb-2">Winners:</p>
+                            <ul className="list-disc list-inside space-y-1 text-gray-600">
+                              {award.winners.map((winner, index) => (
+                                <li key={index}>{winner}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                      </div>
                     </div>
                   </div>
                 );

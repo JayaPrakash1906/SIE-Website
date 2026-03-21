@@ -104,7 +104,7 @@ const Awards = () => {
       {/* Awards Grid */}
       <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8">
             {awardsData.map((award, index) => {
               const Icon = award.icon;
               return (
