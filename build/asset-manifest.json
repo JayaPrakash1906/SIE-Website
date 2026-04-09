@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.08444a07.css",
-    "main.js": "/static/js/main.27564ad0.js",
+    "main.js": "/static/js/main.c7dfd147.js",
     "static/js/453.258b012d.chunk.js": "/static/js/453.258b012d.chunk.js",
     "static/media/vision.jpg": "/static/media/vision.58c6a2eca6ee01a2f93c.jpg",
     "static/media/iitm_logo.png": "/static/media/iitm_logo.0105d85b3475030de3d8.png",
@@ -51,6 +51,7 @@
     "static/media/sathya.png": "/static/media/sathya.6338fb46f0db56ce341c.png",
     "static/media/lalithambika.jpg": "/static/media/lalithambika.92ad2be79a1d310d3d08.jpg",
     "static/media/Varadhan SKM.png": "/static/media/Varadhan SKM.28cd2c1cca273ed4665b.png",
+    "static/media/Mohith.jpeg": "/static/media/Mohith.83532e5da2a885947f72.jpeg",
     "static/media/murugaiyan.png": "/static/media/murugaiyan.77a54c277dc2a5187975.png",
     "static/media/M.Thenmozhi.jpg": "/static/media/M.Thenmozhi.0070b9d64e9054dd0361.jpg",
     "static/media/hdfc-pari.png": "/static/media/hdfc-pari.19700a45e7c0f38d254a.png",
@@ -147,11 +148,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.08444a07.css.map": "/static/css/main.08444a07.css.map",
-    "main.27564ad0.js.map": "/static/js/main.27564ad0.js.map",
+    "main.c7dfd147.js.map": "/static/js/main.c7dfd147.js.map",
     "453.258b012d.chunk.js.map": "/static/js/453.258b012d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.08444a07.css",
-    "static/js/main.27564ad0.js"
+    "static/js/main.c7dfd147.js"
   ]
 }
