@@ -278,7 +278,7 @@ const PhdAdmissions = () => {
 </div>
 
         {/* Apply Button */}
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16">
           <a
             href="https://forms.gle/otX6HXKsfTSkq9nv9"target="_blank"
         rel="noreferrer"
@@ -286,7 +286,7 @@ const PhdAdmissions = () => {
           >
             Apply Now
           </a>
-        </div>
+        </div> */}
         
       </div><Footer />
     </div>

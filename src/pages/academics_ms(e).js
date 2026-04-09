@@ -93,7 +93,7 @@ const Academics = () => {
     </li>
   </ul>
 
-  <div className="flex justify-center mt-6">
+  {/* <div className="flex justify-center mt-6">
     <a
       href="https://forms.gle/SHQ9V1odSujjbYHp6"  target="_blank"
         rel="noreferrer"
@@ -101,7 +101,7 @@ const Academics = () => {
     >
       Click Here to Apply
     </a>
-  </div>
+  </div> */}
 </div>
       </div>
 

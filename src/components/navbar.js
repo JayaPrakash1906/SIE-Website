@@ -330,14 +330,45 @@ const Navbar = () => {
           </button>
           {isStudentsOpen && (
             <ul className="absolute top-full mt-1 left-0 w-72 bg-white text-black font-medium shadow-lg border-t border-black z-50">
-              <li className="border-b border-black last:border-none">
-                {renderLink(
-                  "MS(E)",
-                  "/academics/overview",
-                  "block px-4 py-2 hover:bg-amber-400",
-                  () => {
-                    setIsStudentsOpen(false);
-                  }
+              <li className="border-b border-black last:border-none relative">
+                <button
+                  onClick={() => {
+                    setIsAcademicsMseOpen(!isAcademicsMseOpen);
+                  }}
+                  className="w-full text-left px-4 py-2 hover:bg-amber-400 flex justify-between items-center"
+                >
+                  MS(E)
+                  <FaChevronDown
+                    className={`ml-2 text-xs transition-transform duration-300 ${
+                      isAcademicsMseOpen ? "rotate-[270deg]" : "rotate-0"
+                    }`}
+                  />
+                </button>
+                {isAcademicsMseOpen && (
+                  <ul className="absolute left-full top-0 ml-1 w-48 bg-white border border-black shadow-lg z-50">
+                    <li className="border-b border-black last:border-none">
+                      {renderLink(
+                        "Overview",
+                        "/academics/overview",
+                        "block px-4 py-2 hover:bg-amber-300",
+                        () => {
+                          setIsStudentsOpen(false);
+                          setIsAcademicsMseOpen(false);
+                        }
+                      )}
+                    </li>
+                    <li className="border-b border-black last:border-none">
+                      {renderLink(
+                        "Students",
+                        "/academics/students_ms(e)",
+                        "block px-4 py-2 hover:bg-amber-300",
+                        () => {
+                          setIsStudentsOpen(false);
+                          setIsAcademicsMseOpen(false);
+                        }
+                      )}
+                    </li>
+                  </ul>
                 )}
               </li>
               <li className="border-b border-black last:border-none">

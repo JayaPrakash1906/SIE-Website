@@ -256,7 +256,7 @@ const Home = () => {
   Application Open for MS(Entrepreneurship) July-2026  — 
   <a href="https://research.iitm.ac.in/" className="font-semibold underline">Apply here  </a>
 </span> */}
-<span className="mx-6">
+{/* <span className="mx-6">
   <FaHandPointRight className="inline text-green-600 mr-1" /> 
   Applications Open for MS (Entrepreneurship) – July 2026 | Two-Step Process: Register & Submit Application | 
   <a href="https://research.iitm.ac.in/" target="_blank"
@@ -280,23 +280,23 @@ const Home = () => {
   >
     Apply Here
   </a>
-</span>
-    </>
+</span>*/}
+    </> 
   ];
 
   const currentEvents = [
-    {
-      title: "MS (Entrepreneurship) – July 2026 admissions open",
-      date: "2026",
-      link: "https://research.iitm.ac.in/",
-      tag: "NEW",
-    },
-    {
-      title: "PhD – July 2026 admissions open",
-      date: "2026",
-      link: "https://research.iitm.ac.in/",
-      tag: "NEW",
-    },
+    // {
+    //   title: "MS (Entrepreneurship) – July 2026 admissions open",
+    //   date: "2026",
+    //   link: "https://research.iitm.ac.in/",
+    //   tag: "NEW",
+    // },
+    // {
+    //   title: "PhD – July 2026 admissions open",
+    //   date: "2026",
+    //   link: "https://research.iitm.ac.in/",
+    //   tag: "NEW",
+    // },
     // {
     //   title: "Latest updates from SIE",
     //   date: "",
@@ -351,7 +351,7 @@ const Home = () => {
         </div>
 
         {/* Current Events (responsive) */}
-        <div className="absolute left-4 right-4 bottom-4 z-20 md:left-auto md:right-6 md:top-1/2 md:bottom-auto md:-translate-y-1/2 md:w-[360px]">
+        {/* <div className="absolute left-4 right-4 bottom-4 z-20 md:left-auto md:right-6 md:top-1/2 md:bottom-auto md:-translate-y-1/2 md:w-[360px]">
           <div className="rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md shadow-xl overflow-hidden">
             <div className="px-4 py-3 flex items-center justify-between border-b border-white/10">
               <span className="text-white font-semibold tracking-wide">
@@ -397,7 +397,7 @@ const Home = () => {
               })}
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="relative z-10 flex items-center justify-center h-full px-4">
           <div className="text-center text-white max-w-2xl animate-fadeUp">

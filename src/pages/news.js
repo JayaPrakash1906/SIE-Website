@@ -8,8 +8,10 @@ import img3 from '../assets/News/news3.jpg'; // Replace with your actual image i
 import img4 from "../assets/News/news4.JPG"
 import img5 from "../assets/News/news5.jpg"
 import img6 from "../assets/News/news6.jpg"
+import img7 from "../assets/News/news7.jpg"
 // Single News Card
 const NewsCard = ({ article }) => {
+  const showFullImage = article.id === 7;
   return (
     <div className="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden mb-6 bg-white">
       {/* Image Section */}
@@ -17,7 +19,11 @@ const NewsCard = ({ article }) => {
         <img
           src={article.image}
           alt={article.title}
-          className={`w-full h-full max-h-[250px] object-cover ${article.id === 4 ? 'object-top' : ''}`}
+          className={`w-full ${
+            showFullImage
+              ? "h-auto max-h-[360px] object-contain"
+              : "h-full max-h-[250px] object-cover"
+          } ${article.id === 4 && !showFullImage ? "object-top" : ""}`}
         />
       </div>
 
@@ -79,12 +85,23 @@ const News = () => {
   const itemsPerPage = 8;
 
   const newsData = [
-     {
+    {
+      id: 7,
+      title: 'Delta Expo 2026: Showcasing Innovation at IIT Madras ',
+      date: 'March 14, 2025',
+      readTime: '4 min read',
+      subtitle:' Delta Expo 2026 at IIT Madras brings bold ideas to life, showcasing innovative student startups and breakthrough technologies. Inaugurated by the Hon’ble Governor of Tamil Nadu, Rajendra Vishwanath Arlekar, the expo is open to students, visitors, and the public.',
+      views: 125,
+      comments: 10,
+      image: img7,
+      link: 'https://www.linkedin.com/posts/deltaexpo2026-ewebstoreai-deltaexpo2026-ugcPost-7443199743192723456-TR0u?utm_source=share&utm_medium=member_desktop&rcm=ACoAADFikn4B6jA0Ct1Y84TowFZRR2JHg75s9fg',
+    }, 
+    {
       id: 6,
       title: 'Delta Expo 2026: Showcasing Innovation at IIT Madras ',
       date: 'March 14, 2025',
       readTime: '4 min read',
-      subtitle:' From bold ideas to real-world impact, Delta Expo 2026 is a celebration of innovation at IIT Madras, bringing together cutting-edge student startups and breakthrough technologies. Hosted by the School for Innovation and Entrepreneurship (SIE), IIT Madras, the event was inaugurated by Rajendra Vishwanath Arlekar.',
+      subtitle:' From bold ideas to real-world impact, Delta Expo 2026 is a celebration of innovation at IIT Madras, bringing together cutting-edge student startups and breakthrough technologies. Hosted by the School for Innovation and Entrepreneurship (SIE), IIT Madras, the event was inaugurated by the Hon’ble Governor of Tamil Nadu, Rajendra Vishwanath Arlekar.',
       views: 180,
       comments: 17,
       image: img6,
@@ -110,7 +127,7 @@ const News = () => {
       views: 120,
       comments: 8,
       image: img4,
-      link: '',
+      link: 'https://www.linkedin.com/posts/school-of-innovation-entrepreneurship_we-are-delighted-to-welcome-prof-satyanarayanan-activity-7393541475063689217-VuD9?utm_source=share&utm_medium=member_desktop&rcm=ACoAADFikn4B6jA0Ct1Y84TowFZRR2JHg75s9fg',
     },
     {
       id: 3,

@@ -11,6 +11,7 @@ import UGFIR from './pages/ugfir';
 import PGFIR from './pages/pgfir';
 import Academics_mse from './pages/academics_ms(e)';
 import Courses from './pages/courses';
+import Students from './pages/students';
 import AcademicAwards from './pages/academic_awards';
 import Academics_phd from "./pages/academics_phd";
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/scholorship/pgfir" element={<PGFIR />}/>
           <Route path="/academics/overview" element={<Academics_mse />}/>
           <Route path="/academics/courses" element={<Courses />}/>
+          <Route path="/academics/students_ms(e)" element={<Students />}/>
           <Route path="/academics/awards" element={<AcademicAwards/>}/>
           <Route path="/academics/overview/phd" element={<Academics_phd />}/>
           
