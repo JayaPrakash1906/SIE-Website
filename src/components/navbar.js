@@ -573,7 +573,21 @@ const Navbar = () => {
               </button>
               {isMobileAcademicsOpen && (
                 <div className="ml-4 mt-1">
-                  {renderLink("MS(E)", "/academics/overview", "block py-1", closeMenu)}
+                  <button
+                    onClick={() => setIsMobileAcademicsMseOpen(!isMobileAcademicsMseOpen)}
+                    className="flex justify-between items-center w-full"
+                  >
+                    <span className="block py-1">MS(E)</span>
+                    <FaChevronDown
+                      className={`${isMobileAcademicsMseOpen ? "rotate-180" : ""}`}
+                    />
+                  </button>
+                  {isMobileAcademicsMseOpen && (
+                    <div className="ml-4 mt-1">
+                      {renderLink("Overview", "/academics/overview", "block py-1", closeMenu)}
+                      {renderLink("Students", "/academics/students_ms(e)", "block py-1", closeMenu)}
+                    </div>
+                  )}
                   {renderLink("PhD", "/academics/overview/phd", "block py-1 mt-2", closeMenu)}
                   {renderLink("Courses", "/academics/courses", "block py-1", closeMenu)}
                   {renderLink("Awards", "/academics/awards", "block py-1", closeMenu)}
