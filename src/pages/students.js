@@ -21,6 +21,7 @@ import img17 from '../assets/Students/Vikas.jpg';
 import img18 from '../assets/Students/dinesh.jpg';
 import img19 from '../assets/Students/Shrirengarajan.jpg';
 import img20 from "../assets/Students/Dhulipalla_Venu.jpg";
+import img21 from "../assets/Students/Mohith.jpeg";
 import img22 from "../assets/Students/aadhil.jpg";
 import img23 from "../assets/Students/Harish.jpg";
 import img24 from "../assets/Students/Kartheek Korlepara.png";
@@ -114,7 +115,7 @@ const INITIAL_STUDENTS = [
     yr: "2023", 
     name: "GUHAN GUNASEKARAN",               
     roll: "ME23S404", 
-    title: "",      
+    title: "Democratizing precision manufacturing from India to the world",      
     linkedin: "https://www.linkedin.com/in/guhan-gunasekaran-25882657/", 
     image: img10 
   },
@@ -214,7 +215,8 @@ const INITIAL_STUDENTS = [
     name: "Mohith Kumar Sindhu",             
     roll: "ED24S401", 
     title: "Apply AI features in cad and make a product of it",      
-    linkedin: "https://www.linkedin.com/in/mohit-kumar-sindhu/"
+    linkedin: "https://www.linkedin.com/in/mohit-kumar-sindhu/",
+    image: img21
   },
   { 
     id: 22, 
