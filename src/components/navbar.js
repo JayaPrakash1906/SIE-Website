@@ -29,7 +29,7 @@ const Navbar = () => {
   useEffect(() => {
     function handleClickOutside(e) {
       if (eventsRef.current && !eventsRef.current.contains(e.target) &&
-          academicsRef.current && !academicsRef.current.contains(e.target)) {
+        academicsRef.current && !academicsRef.current.contains(e.target)) {
         setIsEventsOpen(false);
         setIsStudentsOpen(false);
         setIsInnosphereOpen(false);
@@ -152,8 +152,7 @@ const Navbar = () => {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `px-6 hover:text-amber-400 transition-colors duration-200 ${
-              isActive ? "text-amber-400 border-b-2 border-amber-400 pb-1" : "text-white"
+            `px-6 hover:text-amber-400 transition-colors duration-200 ${isActive ? "text-amber-400 border-b-2 border-amber-400 pb-1" : "text-white"
             }`
           }
         >
@@ -162,8 +161,7 @@ const Navbar = () => {
         <NavLink
           to="/about_us"
           className={({ isActive }) =>
-            `px-6 hover:text-amber-400 transition-colors duration-200 ${
-              isActive ? "text-amber-400 border-b-2 border-amber-400 pb-1" : "text-white"
+            `px-6 hover:text-amber-400 transition-colors duration-200 ${isActive ? "text-amber-400 border-b-2 border-amber-400 pb-1" : "text-white"
             }`
           }
         >
@@ -172,8 +170,7 @@ const Navbar = () => {
         <NavLink
           to="/news"
           className={({ isActive }) =>
-            `px-6 hover:text-amber-400 transition-colors duration-200 ${
-              isActive ? "text-amber-400 border-b-2 border-amber-400 pb-1" : "text-white"
+            `px-6 hover:text-amber-400 transition-colors duration-200 ${isActive ? "text-amber-400 border-b-2 border-amber-400 pb-1" : "text-white"
             }`
           }
         >
@@ -182,8 +179,7 @@ const Navbar = () => {
         <NavLink
           to="/mentors"
           className={({ isActive }) =>
-            `px-6 hover:text-amber-400 transition-colors duration-200 ${
-              isActive ? "text-amber-400 border-b-2 border-amber-400 pb-1" : "text-white"
+            `px-6 hover:text-amber-400 transition-colors duration-200 ${isActive ? "text-amber-400 border-b-2 border-amber-400 pb-1" : "text-white"
             }`
           }
         >
@@ -212,9 +208,8 @@ const Navbar = () => {
           >
             Activities
             <FaChevronDown
-              className={`transition-transform duration-300 ${
-                isEventsOpen ? "rotate-180" : "rotate-0"
-              }`}
+              className={`transition-transform duration-300 ${isEventsOpen ? "rotate-180" : "rotate-0"
+                }`}
             />
           </button>
 
@@ -238,74 +233,72 @@ const Navbar = () => {
                       >
                         {name}
                         <FaChevronDown
-                          className={`ml-2 text-xs transition-transform duration-300 ${
-                            (name === "Innosphere" && isInnosphereOpen) ||
+                          className={`ml-2 text-xs transition-transform duration-300 ${(name === "Innosphere" && isInnosphereOpen) ||
                             (name === "Scholarship" && isScholarshipOpen)
-                              ? "rotate-[270deg]"
-                              : "rotate-0"
-                          }`}
+                            ? "rotate-[270deg]"
+                            : "rotate-0"
+                            }`}
                         />
                       </button>
 
                       {((name === "Innosphere" && isInnosphereOpen) ||
                         (name === "Scholarship" && isScholarshipOpen)) && (
-                        <ul className="absolute left-full top-0 ml-1 w-48 bg-white border border-black shadow-lg z-50">
-                          {submenu.map((sub) =>
-                            sub.submenu ? (
-                              <li key={sub.name} className="relative">
-                                <button
-                                  onClick={() => {
-                                    if (sub.name === "Magazine") {
-                                      setIsMagazineOpen(!isMagazineOpen);
-                                      setIsPodcastOpen(false);
-                                    } else if (sub.name === "Podcast") {
-                                      setIsPodcastOpen(!isPodcastOpen);
-                                      setIsMagazineOpen(false);
-                                    }
-                                  }}
-                                  className="w-full text-left px-4 py-2 hover:bg-amber-300 flex justify-between items-center"
-                                >
-                                  {sub.name}
-                                  <FaChevronDown
-                                    className={`ml-2 text-xs transition-transform duration-300 ${
-                                      (sub.name === "Magazine" && isMagazineOpen) ||
-                                      (sub.name === "Podcast" && isPodcastOpen)
+                          <ul className="absolute left-full top-0 ml-1 w-48 bg-white border border-black shadow-lg z-50">
+                            {submenu.map((sub) =>
+                              sub.submenu ? (
+                                <li key={sub.name} className="relative">
+                                  <button
+                                    onClick={() => {
+                                      if (sub.name === "Magazine") {
+                                        setIsMagazineOpen(!isMagazineOpen);
+                                        setIsPodcastOpen(false);
+                                      } else if (sub.name === "Podcast") {
+                                        setIsPodcastOpen(!isPodcastOpen);
+                                        setIsMagazineOpen(false);
+                                      }
+                                    }}
+                                    className="w-full text-left px-4 py-2 hover:bg-amber-300 flex justify-between items-center"
+                                  >
+                                    {sub.name}
+                                    <FaChevronDown
+                                      className={`ml-2 text-xs transition-transform duration-300 ${(sub.name === "Magazine" && isMagazineOpen) ||
+                                        (sub.name === "Podcast" && isPodcastOpen)
                                         ? "rotate-[270deg]"
                                         : "rotate-0"
-                                    }`}
-                                  />
-                                </button>
+                                        }`}
+                                    />
+                                  </button>
 
-                                {((sub.name === "Magazine" && isMagazineOpen) ||
-                                  (sub.name === "Podcast" && isPodcastOpen)) && (
-                                  <ul className="absolute left-full top-0 ml-1 w-48 bg-white border border-black shadow-lg z-50">
-                                    {sub.submenu.map((ssub) => (
-                                      <li key={ssub.name}>
-                                        {renderLink(
-                                          ssub.name,
-                                          ssub.link,
-                                          "block px-4 py-2 hover:bg-amber-200",
-                                          () => setIsEventsOpen(false)
-                                        )}
-                                      </li>
-                                    ))}
-                                  </ul>
-                                )}
-                              </li>
-                            ) : (
-                              <li key={sub.name}>
-                                {/* ✅ FIX: internal links stay on same tab */}
-                                {renderLink(
-                                  sub.name,
-                                  sub.link,
-                                  "block px-4 py-2 hover:bg-amber-300",
-                                  () => setIsEventsOpen(false)
-                                )}
-                              </li>
-                            )
-                          )}
-                        </ul>
-                      )}
+                                  {((sub.name === "Magazine" && isMagazineOpen) ||
+                                    (sub.name === "Podcast" && isPodcastOpen)) && (
+                                      <ul className="absolute left-full top-0 ml-1 w-48 bg-white border border-black shadow-lg z-50">
+                                        {sub.submenu.map((ssub) => (
+                                          <li key={ssub.name}>
+                                            {renderLink(
+                                              ssub.name,
+                                              ssub.link,
+                                              "block px-4 py-2 hover:bg-amber-200",
+                                              () => setIsEventsOpen(false)
+                                            )}
+                                          </li>
+                                        ))}
+                                      </ul>
+                                    )}
+                                </li>
+                              ) : (
+                                <li key={sub.name}>
+                                  {/* ✅ FIX: internal links stay on same tab */}
+                                  {renderLink(
+                                    sub.name,
+                                    sub.link,
+                                    "block px-4 py-2 hover:bg-amber-300",
+                                    () => setIsEventsOpen(false)
+                                  )}
+                                </li>
+                              )
+                            )}
+                          </ul>
+                        )}
                     </>
                   ) : (
                     renderLink(name, link, "block px-4 py-2 hover:bg-amber-400", () => setIsEventsOpen(false))
@@ -330,45 +323,15 @@ const Navbar = () => {
           </button>
           {isStudentsOpen && (
             <ul className="absolute top-full mt-1 left-0 w-72 bg-white text-black font-medium shadow-lg border-t border-black z-50">
-              <li className="border-b border-black last:border-none relative">
-                <button
-                  onClick={() => {
-                    setIsAcademicsMseOpen(!isAcademicsMseOpen);
-                  }}
-                  className="w-full text-left px-4 py-2 hover:bg-amber-400 flex justify-between items-center"
-                >
-                  MS(E)
-                  <FaChevronDown
-                    className={`ml-2 text-xs transition-transform duration-300 ${
-                      isAcademicsMseOpen ? "rotate-[270deg]" : "rotate-0"
-                    }`}
-                  />
-                </button>
-                {isAcademicsMseOpen && (
-                  <ul className="absolute left-full top-0 ml-1 w-48 bg-white border border-black shadow-lg z-50">
-                    <li className="border-b border-black last:border-none">
-                      {renderLink(
-                        "Overview",
-                        "/academics/overview",
-                        "block px-4 py-2 hover:bg-amber-300",
-                        () => {
-                          setIsStudentsOpen(false);
-                          setIsAcademicsMseOpen(false);
-                        }
-                      )}
-                    </li>
-                    <li className="border-b border-black last:border-none">
-                      {renderLink(
-                        "Students",
-                        "/academics/students_ms(e)",
-                        "block px-4 py-2 hover:bg-amber-300",
-                        () => {
-                          setIsStudentsOpen(false);
-                          setIsAcademicsMseOpen(false);
-                        }
-                      )}
-                    </li>
-                  </ul>
+              <li className="border-b border-black last:border-none">
+                {renderLink(
+                  "MS(E)",
+                  "/ms(e)/home",
+                  "block px-4 py-2 hover:bg-amber-400",
+                  () => {
+                    setIsStudentsOpen(false);
+                    setIsAcademicsMseOpen(false);
+                  }
                 )}
               </li>
               <li className="border-b border-black last:border-none">
@@ -383,25 +346,25 @@ const Navbar = () => {
                 )}
               </li>
               <li className="border-b border-black last:border-none">
-                      {renderLink(
-                        "Courses",
-                        "/academics/courses",
-                        "block px-4 py-2 hover:bg-amber-300",
-                        () => {
-                          setIsStudentsOpen(false);
-                        }
-                      )}
-                    </li>
+                {renderLink(
+                  "Courses",
+                  "/academics/courses",
+                  "block px-4 py-2 hover:bg-amber-300",
+                  () => {
+                    setIsStudentsOpen(false);
+                  }
+                )}
+              </li>
               <li className="border-b border-black last:border-none">
-                      {renderLink(
-                        "Awards",
-                        "/academics/awards",
-                        "block px-4 py-2 hover:bg-amber-300",
-                        () => {
-                          setIsStudentsOpen(false);
-                        }
-                      )}
-                    </li>
+                {renderLink(
+                  "Awards",
+                  "/academics/awards",
+                  "block px-4 py-2 hover:bg-amber-300",
+                  () => {
+                    setIsStudentsOpen(false);
+                  }
+                )}
+              </li>
             </ul>
           )}
         </div>
@@ -409,8 +372,7 @@ const Navbar = () => {
         <NavLink
           to="/contact"
           className={({ isActive }) =>
-            `px-6 hover:text-amber-400 transition-colors duration-200 ${
-              isActive ? "text-amber-400 border-b-2 border-amber-400 pb-1" : "text-white"
+            `px-6 hover:text-amber-400 transition-colors duration-200 ${isActive ? "text-amber-400 border-b-2 border-amber-400 pb-1" : "text-white"
             }`
           }
         >
@@ -433,8 +395,7 @@ const Navbar = () => {
                 to="/"
                 onClick={closeMenu}
                 className={({ isActive }) =>
-                  `hover:text-amber-500 transition-colors duration-200 ${
-                    isActive ? "text-amber-500 border-l-4 border-amber-500 pl-2" : "text-gray-800"
+                  `hover:text-amber-500 transition-colors duration-200 ${isActive ? "text-amber-500 border-l-4 border-amber-500 pl-2" : "text-gray-800"
                   }`
                 }
               >
@@ -444,8 +405,7 @@ const Navbar = () => {
                 to="/about_us"
                 onClick={closeMenu}
                 className={({ isActive }) =>
-                  `hover:text-amber-500 transition-colors duration-200 ${
-                    isActive ? "text-amber-500 border-l-4 border-amber-500 pl-2" : "text-gray-800"
+                  `hover:text-amber-500 transition-colors duration-200 ${isActive ? "text-amber-500 border-l-4 border-amber-500 pl-2" : "text-gray-800"
                   }`
                 }
               >
@@ -455,8 +415,7 @@ const Navbar = () => {
                 to="/news"
                 onClick={closeMenu}
                 className={({ isActive }) =>
-                  `hover:text-amber-500 transition-colors duration-200 ${
-                    isActive ? "text-amber-500 border-l-4 border-amber-500 pl-2" : "text-gray-800"
+                  `hover:text-amber-500 transition-colors duration-200 ${isActive ? "text-amber-500 border-l-4 border-amber-500 pl-2" : "text-gray-800"
                   }`
                 }
               >
@@ -466,8 +425,7 @@ const Navbar = () => {
                 to="/mentors"
                 onClick={closeMenu}
                 className={({ isActive }) =>
-                  `hover:text-amber-500 transition-colors duration-200 ${
-                    isActive ? "text-amber-500 border-l-4 border-amber-500 pl-2" : "text-gray-800"
+                  `hover:text-amber-500 transition-colors duration-200 ${isActive ? "text-amber-500 border-l-4 border-amber-500 pl-2" : "text-gray-800"
                   }`
                 }
               >
@@ -514,44 +472,44 @@ const Navbar = () => {
                         </button>
                         {((name === "Innosphere" && isMobileInnosphereOpen) ||
                           (name === "Scholarship" && isMobileScholarshipOpen)) && (
-                          <div className="ml-4">
-                            {submenu.map((sub) =>
-                              sub.submenu ? (
-                                <div key={sub.name}>
-                                  <button
-                                    onClick={() => {
-                                      if (sub.name === "Magazine") {
-                                        setIsMobileMagazineOpen(!isMobileMagazineOpen);
-                                        setIsMobilePodcastOpen(false);
-                                      } else if (sub.name === "Podcast") {
-                                        setIsMobilePodcastOpen(!isMobilePodcastOpen);
-                                        setIsMobileMagazineOpen(false);
-                                      }
-                                    }}
-                                    className="flex justify-between w-full"
-                                  >
-                                    {sub.name} <FaChevronDown />
-                                  </button>
-                                  {((sub.name === "Magazine" && isMobileMagazineOpen) ||
-                                    (sub.name === "Podcast" && isMobilePodcastOpen)) && (
-                                    <div className="ml-4">
-                                      {sub.submenu.map((ssub) => (
-                                        <div key={ssub.name}>
-                                          {renderLink(ssub.name, ssub.link, "block py-1", closeMenu)}
+                            <div className="ml-4">
+                              {submenu.map((sub) =>
+                                sub.submenu ? (
+                                  <div key={sub.name}>
+                                    <button
+                                      onClick={() => {
+                                        if (sub.name === "Magazine") {
+                                          setIsMobileMagazineOpen(!isMobileMagazineOpen);
+                                          setIsMobilePodcastOpen(false);
+                                        } else if (sub.name === "Podcast") {
+                                          setIsMobilePodcastOpen(!isMobilePodcastOpen);
+                                          setIsMobileMagazineOpen(false);
+                                        }
+                                      }}
+                                      className="flex justify-between w-full"
+                                    >
+                                      {sub.name} <FaChevronDown />
+                                    </button>
+                                    {((sub.name === "Magazine" && isMobileMagazineOpen) ||
+                                      (sub.name === "Podcast" && isMobilePodcastOpen)) && (
+                                        <div className="ml-4">
+                                          {sub.submenu.map((ssub) => (
+                                            <div key={ssub.name}>
+                                              {renderLink(ssub.name, ssub.link, "block py-1", closeMenu)}
+                                            </div>
+                                          ))}
                                         </div>
-                                      ))}
-                                    </div>
-                                  )}
-                                </div>
-                              ) : (
-                                <div key={sub.name}>
-                                  {/* ✅ FIX: internal links stay on same tab in mobile too */}
-                                  {renderLink(sub.name, sub.link, "block py-1", closeMenu)}
-                                </div>
-                              )
-                            )}
-                          </div>
-                        )}
+                                      )}
+                                  </div>
+                                ) : (
+                                  <div key={sub.name}>
+                                    {/* ✅ FIX: internal links stay on same tab in mobile too */}
+                                    {renderLink(sub.name, sub.link, "block py-1", closeMenu)}
+                                  </div>
+                                )
+                              )}
+                            </div>
+                          )}
                       </div>
                     ) : (
                       <div key={name}>
@@ -573,21 +531,7 @@ const Navbar = () => {
               </button>
               {isMobileAcademicsOpen && (
                 <div className="ml-4 mt-1">
-                  <button
-                    onClick={() => setIsMobileAcademicsMseOpen(!isMobileAcademicsMseOpen)}
-                    className="flex justify-between items-center w-full"
-                  >
-                    <span className="block py-1">MS(E)</span>
-                    <FaChevronDown
-                      className={`${isMobileAcademicsMseOpen ? "rotate-180" : ""}`}
-                    />
-                  </button>
-                  {isMobileAcademicsMseOpen && (
-                    <div className="ml-4 mt-1">
-                      {renderLink("Overview", "/academics/overview", "block py-1", closeMenu)}
-                      {renderLink("Students", "/academics/students_ms(e)", "block py-1", closeMenu)}
-                    </div>
-                  )}
+                  {renderLink("MS(E)", "/ms(e)/home", "block py-1", closeMenu)}
                   {renderLink("PhD", "/academics/overview/phd", "block py-1 mt-2", closeMenu)}
                   {renderLink("Courses", "/academics/courses", "block py-1", closeMenu)}
                   {renderLink("Awards", "/academics/awards", "block py-1", closeMenu)}
@@ -597,8 +541,7 @@ const Navbar = () => {
                 to="/contact"
                 onClick={closeMenu}
                 className={({ isActive }) =>
-                  `hover:text-amber-500 transition-colors duration-200 ${
-                    isActive ? "text-amber-500 border-l-4 border-amber-500 pl-2" : "text-gray-800"
+                  `hover:text-amber-500 transition-colors duration-200 ${isActive ? "text-amber-500 border-l-4 border-amber-500 pl-2" : "text-gray-800"
                   }`
                 }
               >

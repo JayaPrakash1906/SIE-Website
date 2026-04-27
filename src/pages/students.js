@@ -31,264 +31,300 @@ import img27 from "../assets/Students/Gokula Vishnu Kirti Damodaran.png";
 import img28 from "../assets/Students/Mahalakshmi.jpeg";
 import img29 from "../assets/Students/Sankara narayanan.jpg";
 // ─── Data ───────────────────────────────────────────────────────────────────
-const INITIAL_STUDENTS = [
-  { id: 1, 
-    yr: "2021", 
-    name: "Devika S Menon",                   
-    roll: "ME21S402", 
-    title: "Coconut shell biochar production from a sustainable",                                                                                                         
-    linkedin: "https://www.linkedin.com/in/devika-s-menon-4052ab107/", 
-    image: img1 
+export const INITIAL_STUDENTS = [
+  {
+    id: 1,
+    yr: "2021",
+    name: "Devika S Menon",
+    roll: "ME21S402",
+    title: "Coconut shell biochar production from a sustainable",
+    linkedin: "https://www.linkedin.com/in/devika-s-menon-4052ab107/",
+    image: img1,
+    startup: "Susstains Engineering Solutions LLP"
   },
-  { 
-    id: 2, 
-    yr: "2021", 
-    name: "Bala Murugan L",                   
-    roll: "MM21S401", 
-    title: "Affordable Continuous Glucose Monitoring Device",                                                                                                             
-    linkedin: "https://www.linkedin.com/in/intelaegis/", 
-    image: img2 
+  {
+    id: 2,
+    yr: "2021",
+    name: "Bala Murugan L",
+    roll: "MM21S401",
+    title: "Affordable Continuous Glucose Monitoring Device",
+    linkedin: "https://www.linkedin.com/in/intelaegis/",
+    image: img2,
+    startup: " Uniscreen solutions"
   },
-  { 
-    id: 3, 
-    yr: "2021", 
-    name: "Sandeep Kumar",                    
-    roll: "MM21S400", 
-    title: "Battery and supercapacitor hybrid system for high power density, performance improvement, safety improvement and battery life enhancement ",                  
-    linkedin: "https://www.linkedin.com/in/connect-sandeep-kumar-engg/", 
-    image: img3 
+  {
+    id: 3,
+    yr: "2021",
+    name: "Sandeep Kumar",
+    roll: "MM21S400",
+    title: "Battery and supercapacitor hybrid system for high power density, performance improvement, safety improvement and battery life enhancement ",
+    linkedin: "https://www.linkedin.com/in/connect-sandeep-kumar-engg/",
+    image: img3,
+    startup: " Batcapbeyond energy solutions"
   },
-  { 
-    id: 4, 
-    yr: "2021", 
-    name: "Sivasubramanian M",                
-    roll: "EE21S402", 
-    title: "An Electronic modular device to check the purity of water at point of use",                                                                                   
-    linkedin: "https://www.linkedin.com/in/sivasubramanian-m-71b070100/", 
-    image: img4 
+  {
+    id: 4,
+    yr: "2021",
+    name: "Sivasubramanian M",
+    roll: "EE21S402",
+    title: "An Electronic modular device to check the purity of water at point of use",
+    linkedin: "https://www.linkedin.com/in/sivasubramanian-m-71b070100/",
+    image: img4,
+    startup: "Qual Grip"
+
   },
-  { id: 5, 
-    yr: "2021", 
-    name: "VijayaRaja",                       
-    roll: "ME21S401", 
-    title: "Plenome allows for interoperability of systems for multiple hospitals, institutes and healthcare organizations. It integrates medical supply chain management and proactive tracking of the spread of contagious infections.",    
-    linkedin: "https://www.linkedin.com/in/vijayaraja-rathinasamy/", 
-    image: img5 
+  {
+    id: 5,
+    yr: "2021",
+    name: "VijayaRaja",
+    roll: "ME21S401",
+    title: "Plenome allows for interoperability of systems for multiple hospitals, institutes and healthcare organizations. It integrates medical supply chain management and proactive tracking of the spread of contagious infections.",
+    linkedin: "https://www.linkedin.com/in/vijayaraja-rathinasamy/",
+    image: img5,
+    startup: "Plenome technologies pvt ltd"
   },
-  { 
-    id: 6, 
-    yr: "2022", 
-    name: "Mayank Rajkumar Mishra",           
-    roll: "MM22S400", 
-    title: "In-situ miniaturized mechanical testing machine: Our aim is to develop a modular miniaturized mechanical testing machine with in-situ characterisation",      
-    linkedin: "https://www.linkedin.com/in/mayank-r-mishra/", 
-    image: img6 
+  {
+    id: 6,
+    yr: "2022",
+    name: "Mayank Rajkumar Mishra",
+    roll: "MM22S400",
+    title: "In-situ miniaturized mechanical testing machine: Our aim is to develop a modular miniaturized mechanical testing machine with in-situ characterisation",
+    linkedin: "https://www.linkedin.com/in/mayank-r-mishra/",
+    image: img6,
+    startup: "InsituMicron "
   },
-  { 
-    id: 7, 
-    yr: "2022", 
-    name: "Sumant Bansal",                    
-    roll: "AM22S400", 
-    title: "Energy efficiecy: Developing pressure recovery to power generation expanders for use in process industries, where steam is used as a working fluid",         
-    linkedin: "https://www.linkedin.com/in/sumant-bansal/", 
-    image: img7 
+  {
+    id: 7,
+    yr: "2022",
+    name: "Sumant Bansal",
+    roll: "AM22S400",
+    title: "Energy efficiecy: Developing pressure recovery to power generation expanders for use in process industries, where steam is used as a working fluid",
+    linkedin: "https://www.linkedin.com/in/sumant-bansal/",
+    image: img7,
+    startup: "Wankel Energy System"
   },
-  { id: 8, 
-    yr: "2023", 
-    name: "Srijan Tiwari",                    
-    roll: "ME23S401", 
-    title: "To become all in one umbrella platform for all Inspection and Workflow management Needs",   
-    linkedin: "https://www.linkedin.com/in/srijantiwari10/", 
-    image: img8
+  {
+    id: 8,
+    yr: "2023",
+    name: "Srijan Tiwari",
+    roll: "ME23S401",
+    title: "To become all in one umbrella platform for all Inspection and Workflow management Needs",
+    linkedin: "https://www.linkedin.com/in/srijantiwari10/",
+    image: img8,
+    startup: "TIQ World"
   },
-  { 
-    id: 9, 
-    yr: "2023", 
-    name: "Kaushik V N",                      
-    roll: "ME23S403", 
-    title: "Revolutionising Railway Safety with Groundbreaking Digital Technology",      
-    linkedin: "https://www.linkedin.com/in/kaushiknarayanan27/", 
-    image: img9 
+  {
+    id: 9,
+    yr: "2023",
+    name: "Kaushik V N",
+    roll: "ME23S403",
+    title: "Revolutionising Railway Safety with Groundbreaking Digital Technology",
+    linkedin: "https://www.linkedin.com/in/kaushiknarayanan27/",
+    image: img9,
+    startup: "Rail Labs"
+
   },
-  { 
-    id: 10, 
-    yr: "2023", 
-    name: "GUHAN GUNASEKARAN",               
-    roll: "ME23S404", 
-    title: "Democratizing precision manufacturing from India to the world",      
-    linkedin: "https://www.linkedin.com/in/guhan-gunasekaran-25882657/", 
-    image: img10 
+  {
+    id: 10,
+    yr: "2023",
+    name: "GUHAN GUNASEKARAN",
+    roll: "ME23S404",
+    title: "Democratizing precision manufacturing from India to the world",
+    linkedin: "https://www.linkedin.com/in/guhan-gunasekaran-25882657/",
+    image: img10,
+    startup: "Guhan industrial and manufacturing solutions"
   },
-  { 
-    id: 11, 
-    yr: "2023", 
-    name: "Nimesh",                          
-    roll: "ME23S402", 
-    title: "Implement a blockchain-based system to manage the entire lifecycle of carbon credits, ensuring transparency and authenticity from issuance to retirement of tokens.",      
-    linkedin: "https://www.linkedin.com/in/nimeshch/?skipRedirect=true", 
-    image: img11 
+  {
+    id: 11,
+    yr: "2023",
+    name: "Nimesh",
+    roll: "ME23S402",
+    title: "Implement a blockchain-based system to manage the entire lifecycle of carbon credits, ensuring transparency and authenticity from issuance to retirement of tokens.",
+    linkedin: "https://www.linkedin.com/in/nimeshch/?skipRedirect=true",
+    image: img11,
+    startup: "Next carbon"
   },
-  { 
-    id: 12, 
-    yr: "2023", 
-    name: "Sanjeev Rajput",                 
-    roll: "CY23S400", 
-    title: "redox flow batteries",     
-     linkedin: "https://www.linkedin.com/in/sanjee-eev/?skipRedirect=true", 
-     image: img12 
-    },
-  { 
-    id: 13, 
-    yr: "2023", 
-    name: "Sanidhya chaturvedi",             
-    roll: "EE23S400", 
-    title: "Multi Parameter Sensing using optical fibers",      
-    linkedin: "https://www.linkedin.com/in/sanidhyachaturvedi/", 
-    image: img13 
+  {
+    id: 12,
+    yr: "2023",
+    name: "Sanjeev Rajput",
+    roll: "CY23S400",
+    title: "redox flow batteries",
+    linkedin: "https://www.linkedin.com/in/sanjee-eev/?skipRedirect=true",
+    image: img12,
+    startup: "PulseFlow"
   },
-  { 
-    id: 14, 
-    yr: "2023", 
-    name: "Baskar V.S",                      
-    roll: "MS23S401", 
-    title: "Metaverse( Mixed Reality) application for mental wellness , targeting Residential Institutes and their Students ",      
-    linkedin: "https://www.linkedin.com/in/baskar-sk-1764983b/", 
-    image: img14 
+  {
+    id: 13,
+    yr: "2023",
+    name: "Sanidhya chaturvedi",
+    roll: "EE23S400",
+    title: "Multi Parameter Sensing using optical fibers",
+    linkedin: "https://www.linkedin.com/in/sanidhyachaturvedi/",
+    image: img13,
+    startup: "Folium Sensing Private Ltd"
   },
-  { 
-    id: 15, 
-    yr: "2023", 
-    name: "Sudhir.S",                        
-    roll: "CY23S401", 
-    title: "Real-time water quality data visualization",      
-    linkedin: "https://www.linkedin.com/in/sudhir-s07/", 
-    image: img15 
+  {
+    id: 14,
+    yr: "2023",
+    name: "Baskar V.S",
+    roll: "MS23S401",
+    title: "Metaverse( Mixed Reality) application for mental wellness , targeting Residential Institutes and their Students ",
+    linkedin: "https://www.linkedin.com/in/baskar-sk-1764983b/",
+    image: img14,
+    startup: "Mindverve-Sama"
   },
-  { 
-    id: 16, 
-    yr: "2024", 
-    name: "Pavansudhan H",                   
-    roll: "ME24S401", 
-    title: "Tribology of Electric Vehicle Bearings ",      
-    linkedin: "https://www.linkedin.com/in/pavansudhan-hari-2135081b9/", 
-    image: img16 
+  {
+    id: 15,
+    yr: "2023",
+    name: "Sudhir.S",
+    roll: "CY23S401",
+    title: "Real-time water quality data visualization",
+    linkedin: "https://www.linkedin.com/in/sudhir-s07/",
+    image: img15,
+    startup: "People's water Data(Aqua hive)"
   },
-  { 
-    id: 17, 
-    yr: "2024", 
-    name: "Vikas Kumar",                     
-    roll: "ME24S400", 
-    title: "Reduction of vibration in automobile by modification in crank shaft",      
-    linkedin: "https://www.linkedin.com/in/vikas-kumar-47a92018b/", 
-    image: img17 
+  {
+    id: 16,
+    yr: "2024",
+    name: "Pavansudhan H",
+    roll: "ME24S401",
+    title: "Tribology of Electric Vehicle Bearings ",
+    linkedin: "https://www.linkedin.com/in/pavansudhan-hari-2135081b9/",
+    image: img16,
+    startup: "Stratagem Testing solutions"
   },
-  { 
-    id: 18, 
-    yr: "2024", 
-    name: "Dinesh Sundrani",                 
-    roll: "AM24S401", 
-    title: "Full body Kinematics Measurement Device for early Detection of Parkinson Disease",      
-    linkedin: "https://www.linkedin.com/in/dinesh-sundrani-1258551b4/", 
-    image: img18 
+  {
+    id: 17,
+    yr: "2024",
+    name: "Vikas Kumar",
+    roll: "ME24S400",
+    title: "Reduction of vibration in automobile by modification in crank shaft",
+    linkedin: "https://www.linkedin.com/in/vikas-kumar-47a92018b/",
+    image: img17,
+    startup: "Autocrank"
   },
-  { 
-    id: 19, 
-    yr: "2024", 
-    name: "Shri Rengarajan",                  
-    roll: "AM24S400", 
-    title: "Decarbonisation and sustainability consulting ",      
-    linkedin: "https://www.linkedin.com/in/shri-rengarajan-8b9a24162/", 
-    image: img19 
+  {
+    id: 18,
+    yr: "2024",
+    name: "Dinesh Sundrani",
+    roll: "AM24S401",
+    title: "Full body Kinematics Measurement Device for early Detection of Parkinson Disease",
+    linkedin: "https://www.linkedin.com/in/dinesh-sundrani-1258551b4/",
+    image: img18,
+    startup: "Kriya Neuro Technologies"
   },
-  { 
+  {
+    id: 19,
+    yr: "2024",
+    name: "Shri Rengarajan",
+    roll: "AM24S400",
+    title: "Decarbonisation and sustainability consulting ",
+    linkedin: "https://www.linkedin.com/in/shri-rengarajan-8b9a24162/",
+    image: img19,
+    startup: "Arantree Consulting"
+  },
+  {
     id: 20,
-    yr: "2024", 
-    name: "Dhulipalla Venu",                 
-    roll: "MM24S400", 
-    title: " Next-gen Smart car windshield that can change its tint automatically",      
-    linkedin: "https://www.linkedin.com/in/venu-dhulipalla-861939332/", 
-    image: img20 
+    yr: "2024",
+    name: "Dhulipalla Venu",
+    roll: "MM24S400",
+    title: " Next-gen Smart car windshield that can change its tint automatically",
+    linkedin: "https://www.linkedin.com/in/venu-dhulipalla-861939332/",
+    image: img20,
+    startup: "GLARE ZERO"
   },
-  { 
-    id: 21, 
-    yr: "2024", 
-    name: "Mohith Kumar Sindhu",             
-    roll: "ED24S401", 
-    title: "Apply AI features in cad and make a product of it",      
+  {
+    id: 21,
+    yr: "2024",
+    name: "Mohith Kumar Sindhu",
+    roll: "ED24S401",
+    title: "Apply AI features in cad and make a product of it",
     linkedin: "https://www.linkedin.com/in/mohit-kumar-sindhu/",
-    image: img21
+    image: img21,
+    startup: "AI in Enginering Design"
   },
-  { 
-    id: 22, 
-    yr: "2024", 
-    name: "Aadil Mohammad Afzal Rasoliwala", 
+  {
+    id: 22,
+    yr: "2024",
+    name: "Aadil Mohammad Afzal Rasoliwala",
     roll: "CH24S400",
-    title: "Simulations,3d printing, personalised properties and products in less time and precise manner.",      
-    linkedin: "https://www.linkedin.com/in/aadil-rasoliwala-9626761b5/", 
-    image: img22 
+    title: "Simulations,3d printing, personalised properties and products in less time and precise manner.",
+    linkedin: "https://www.linkedin.com/in/aadil-rasoliwala-9626761b5/",
+    image: img22,
+    startup: "Tawakkul"
   },
-  { 
-    id: 23, 
-    yr: "2024", 
-    name: "Harish kumar",                    
-    roll: "MS24S400", 
-    title: "VAIP is a platform where fans can buy digital tokens (NFTs) of their favorite creators using e₹ (India’s digital currency). Creators earn money when fans buy these tokens, and they keep earning every time the token is resold. This helps creators make steady money while fans can support and benefit.",      
-    linkedin: "https://www.linkedin.com/in/harish-kumar-tn/", 
-    image: img23 
+  {
+    id: 23,
+    yr: "2024",
+    name: "Harish kumar",
+    roll: "MS24S400",
+    title: "VAIP is a platform where fans can buy digital tokens (NFTs) of their favorite creators using e₹ (India’s digital currency). Creators earn money when fans buy these tokens, and they keep earning every time the token is resold. This helps creators make steady money while fans can support and benefit.",
+    linkedin: "https://www.linkedin.com/in/harish-kumar-tn/",
+    image: img23,
+    startup: "Vaip"
   },
-  { 
-    id: 24, 
-    yr: "2025", 
-    name: "KARTHEEK KORLEPARA",              
-    roll: "ID25S403", 
-    title: "We give farmers a free app to save money on fertilizer, and in exchange, they share the unique drone data with us and help them to get carbon credits and sell audit dashboards to big companies who must prove their supply chains are climate-friendly.",      
-    linkedin: "https://www.linkedin.com/in/kartheek-korlepara-a232291ab/", 
-    image: img24
+  {
+    id: 24,
+    yr: "2025",
+    name: "KARTHEEK KORLEPARA",
+    roll: "ID25S403",
+    title: "We give farmers a free app to save money on fertilizer, and in exchange, they share the unique drone data with us and help them to get carbon credits and sell audit dashboards to big companies who must prove their supply chains are climate-friendly.",
+    linkedin: "https://www.linkedin.com/in/kartheek-korlepara-a232291ab/",
+    image: img24,
+    startup: "Pramaan"
   },
-  { 
-    id: 25, 
-    yr: "2025", 
-    name: "GATRAM SRAVAN KUMAR",             
-    roll: "ID25S405", 
-    title: " Developed the PAN India web-based supply chain platform to signup & onboard vendors with reporting dashboards",      
-    linkedin: "https://www.linkedin.com/in/sravan-kumar-gatram/", 
-    image: img25 
+  {
+    id: 25,
+    yr: "2025",
+    name: "GATRAM SRAVAN KUMAR",
+    roll: "ID25S405",
+    title: " Developed the PAN India web-based supply chain platform to signup & onboard vendors with reporting dashboards",
+    linkedin: "https://www.linkedin.com/in/sravan-kumar-gatram/",
+    image: img25,
+    startup: "Caterworld ai"
+
   },
-  { 
-    id: 26, 
-    yr: "2025", 
-    name: "SHRI JAYANTHI S P",               
-    roll: "ID25S406", 
-    title: "We connect government and industry problem statements with young innovators and startups, providing mentorship, technology guidance, and funding support, so solutions can be developed faster and effectively.",      
-    linkedin: "https://www.linkedin.com/in/shrijayanthisp/", 
-    image: img26 
+  {
+    id: 26,
+    yr: "2025",
+    name: "SHRI JAYANTHI S P",
+    roll: "ID25S406",
+    title: "We connect government and industry problem statements with young innovators and startups, providing mentorship, technology guidance, and funding support, so solutions can be developed faster and effectively.",
+    linkedin: "https://www.linkedin.com/in/shrijayanthisp/",
+    image: img26,
+    startup: "ShakthiAI"
   },
-  { 
-    id: 27, 
-    yr: "2025", 
-    name: "GOKULA VISHNU KIRTI DAMODARAN",   
-    roll: "ID25S407", 
-    title: "Developed a physics model that can adapt to a dynamic and human centric environment and optimised path planning based on various aspects",      
-    linkedin: "https://www.linkedin.com/in/gokula-vishnu-kirti-damodaran-a3148316b/", 
-    image: img27
+  {
+    id: 27,
+    yr: "2025",
+    name: "GOKULA VISHNU KIRTI DAMODARAN",
+    roll: "ID25S407",
+    title: "Developed a physics model that can adapt to a dynamic and human centric environment and optimised path planning based on various aspects",
+    linkedin: "https://www.linkedin.com/in/gokula-vishnu-kirti-damodaran-a3148316b/",
+    image: img27,
+    startup: "Navic"
   },
-  { 
-    id: 28, 
-    yr: "2025", 
-    name: "MAHALAKSHMI S",                   
-    roll: "ID25S409", 
-    title: "GEMESH is a single device that combines a Wi-Fi router and smart home hub, letting all brands of smart devices work together through one app",      
-    linkedin: "https://www.linkedin.com/in/mahalakshmisiva/", 
-    image: img28 
+  {
+    id: 28,
+    yr: "2025",
+    name: "MAHALAKSHMI S",
+    roll: "ID25S409",
+    title: "GEMESH is a single device that combines a Wi-Fi router and smart home hub, letting all brands of smart devices work together through one app",
+    linkedin: "https://www.linkedin.com/in/mahalakshmisiva/",
+    image: img28,
+    startup: "GEMESH"
   },
-  { 
-    id: 29, 
-    yr: "2025", 
-    name: "SANKARA NARAYANAN V",             
-    roll: "ID25S411", 
-    title: "I am creating a platform that is web and mobile app as a service that allows people or the government to give money in a safe and specific way. For example, if money is given for school fees or medicines, it can only be used for that purpose. This helps make sure the money goes where it’s supposed to and is not misused. ",      
-    linkedin: "https://www.linkedin.com/in/abhinavvsankar/", 
-    image: img29 
+  {
+    id: 29,
+    yr: "2025",
+    name: "SANKARA NARAYANAN V",
+    roll: "ID25S411",
+    title: "I am creating a platform that is web and mobile app as a service that allows people or the government to give money in a safe and specific way. For example, if money is given for school fees or medicines, it can only be used for that purpose. This helps make sure the money goes where it’s supposed to and is not misused. ",
+    linkedin: "https://www.linkedin.com/in/abhinavvsankar/",
+    image: img29,
+    startup: "Kubbera.in"
+
   }
 ];
 
@@ -297,7 +333,7 @@ const YEARS = ["2021", "2022", "2023", "2024", "2025"];
 
 const YR_META = {
   "2021": { label: "Batch 2021–2022", badge: "bg-purple-100 text-purple-800", av: "bg-purple-100 text-purple-800", border: "border-l-4 border-purple-500" },
-  "2022": { label: "Batch 2022–2023", badge: "bg-teal-100 text-teal-800",     av: "bg-teal-100 text-teal-800",     border: "border-l-4 border-teal-500"   },
+  "2022": { label: "Batch 2022–2023", badge: "bg-teal-100 text-teal-800", av: "bg-teal-100 text-teal-800", border: "border-l-4 border-teal-500" },
   "2023": { label: "Batch 2023–2024", badge: "bg-orange-100 text-orange-800", av: "bg-orange-100 text-orange-800", border: "border-l-4 border-orange-500" },
   "2024": { label: "Batch 2024–2025", badge: "bg-green-100 text-green-800", av: "bg-green-100 text-green-800", border: "border-l-4 border-green-500" },
   "2025": { label: "Batch 2025–2026", badge: "bg-blue-100 text-blue-800", av: "bg-blue-100 text-blue-800", border: "border-l-4 border-blue-500" },
@@ -342,10 +378,10 @@ const SortIcon = ({ col, sortCol, sortDir }) =>
     : <span className="text-slate-600 text-xs ml-1">{sortDir === 1 ? "▲" : "▼"}</span>;
 
 // ─── StudentFormModal ─────────────────────────────────────────────────────────
-const EMPTY_FORM = { yr: "2021", name: "", roll: "", title: "", linkedin: "" };
+const EMPTY_FORM = { yr: "2021", name: "", roll: "", title: "", linkedin: "", startup: "" };
 
 function StudentFormModal({ student, onSave, onClose }) {
-  const [form, setForm] = useState(student ? { yr: student.yr, name: student.name, roll: student.roll, title: student.title, linkedin: student.linkedin } : EMPTY_FORM);
+  const [form, setForm] = useState(student ? { yr: student.yr, name: student.name, roll: student.roll, title: student.title, linkedin: student.linkedin, startup: student.startup || "" } : EMPTY_FORM);
   const [errors, setErrors] = useState({});
   const isEdit = Boolean(student);
 
@@ -356,8 +392,8 @@ function StudentFormModal({ student, onSave, onClose }) {
 
   const validate = () => {
     const e = {};
-    if (!form.name.trim())  e.name  = "Name is required";
-    if (!form.roll.trim())  e.roll  = "Roll number is required";
+    if (!form.name.trim()) e.name = "Name is required";
+    if (!form.roll.trim()) e.roll = "Roll number is required";
     if (!form.title.trim()) e.title = "Research title is required";
     if (form.linkedin && !/^https?:\/\/.+/.test(form.linkedin)) e.linkedin = "Enter a valid URL (https://...)";
     return e;
@@ -416,10 +452,11 @@ function StudentFormModal({ student, onSave, onClose }) {
             </div>
           </div>
 
-          <Field fkey="name"     label="Full name"                   placeholder="e.g. Arun Kumar" />
-          <Field fkey="roll"     label="Roll number"                 placeholder="e.g. MS21E001" />
-          <Field fkey="title"    label="Research title"              placeholder="e.g. VLSI Design Engineer" />
-          <Field fkey="linkedin" label="LinkedIn URL (optional)"     placeholder="https://linkedin.com/in/..." type="url" />
+          <Field fkey="name" label="Full name" placeholder="e.g. Arun Kumar" />
+          <Field fkey="roll" label="Roll number" placeholder="e.g. MS21E001" />
+          <Field fkey="startup" label="Startup Name (Optional)" placeholder="e.g. EcoChar" />
+          <Field fkey="title" label="Research title" placeholder="e.g. VLSI Design Engineer" />
+          <Field fkey="linkedin" label="LinkedIn URL (optional)" placeholder="https://linkedin.com/in/..." type="url" />
 
           <div className="flex gap-3 pt-1">
             <button type="button" onClick={onClose}
@@ -469,6 +506,9 @@ function YearTable({ yr, students, onEdit, onDelete }) {
               <th className="py-2 px-3 text-left text-xs font-medium text-slate-500 cursor-pointer hover:text-slate-700 w-56 select-none" onClick={() => handleSort("name")}>
                 Student <SortIcon col="name" sortCol={sortCol} sortDir={sortDir} />
               </th>
+              <th className="py-2 px-3 text-left text-xs font-medium text-slate-500 cursor-pointer hover:text-slate-700 w-40 select-none" onClick={() => handleSort("startup")}>
+                Startup <SortIcon col="startup" sortCol={sortCol} sortDir={sortDir} />
+              </th>
               <th className="py-2 px-3 text-left text-xs font-medium text-slate-500 cursor-pointer hover:text-slate-700 select-none" onClick={() => handleSort("title")}>
                 Research title <SortIcon col="title" sortCol={sortCol} sortDir={sortDir} />
               </th>
@@ -494,6 +534,7 @@ function YearTable({ yr, students, onEdit, onDelete }) {
                     </div>
                   </div>
                 </td>
+                <td className="py-3 px-3 text-sm font-medium text-blue-800">{s.startup || "—"}</td>
                 <td className="py-3 px-3 text-sm text-slate-500">{s.title}</td>
                 <td className="py-3 px-3">
                   <a href={s.linkedin} target="_blank" rel="noreferrer"
@@ -512,10 +553,10 @@ function YearTable({ yr, students, onEdit, onDelete }) {
 
 // ─── Main App ─────────────────────────────────────────────────────────────────
 export default function MSEStudentSelection() {
-  const [students, setStudents]       = useState(INITIAL_STUDENTS);
-  const [search, setSearch]           = useState("");
-  const [yrFilter, setYrFilter]       = useState("");
-  const [modalOpen, setModalOpen]     = useState(false);
+  const [students, setStudents] = useState(INITIAL_STUDENTS);
+  const [search, setSearch] = useState("");
+  const [yrFilter, setYrFilter] = useState("");
+  const [modalOpen, setModalOpen] = useState(false);
   const [editStudent, setEditStudent] = useState(null);
 
   const filtered = useMemo(() => {
@@ -582,7 +623,7 @@ export default function MSEStudentSelection() {
             <div className="text-center py-16 text-slate-400 text-sm">No students match your search.</div>
           )}
 
-          
+
         </div>
       </main>
 

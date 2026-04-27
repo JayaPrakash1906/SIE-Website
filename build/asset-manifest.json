@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.08444a07.css",
-    "main.js": "/static/js/main.c7dfd147.js",
+    "main.css": "/static/css/main.bab6cd01.css",
+    "main.js": "/static/js/main.2ec3d536.js",
     "static/js/453.258b012d.chunk.js": "/static/js/453.258b012d.chunk.js",
     "static/media/vision.jpg": "/static/media/vision.58c6a2eca6ee01a2f93c.jpg",
     "static/media/iitm_logo.png": "/static/media/iitm_logo.0105d85b3475030de3d8.png",
@@ -145,14 +145,13 @@
     "static/media/ugfir_2024-6.jpg": "/static/media/ugfir_2024-6.5b55fcb0be78a8152d6e.jpg",
     "static/media/jako-mueller.svg": "/static/media/jako-mueller.e1d88f5e738586524cf0da722cf110a0.svg",
     "static/media/hyperverge.webp": "/static/media/hyperverge.0d916a5ebaafd30b2687.webp",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.08444a07.css.map": "/static/css/main.08444a07.css.map",
-    "main.c7dfd147.js.map": "/static/js/main.c7dfd147.js.map",
+    "main.bab6cd01.css.map": "/static/css/main.bab6cd01.css.map",
+    "main.2ec3d536.js.map": "/static/js/main.2ec3d536.js.map",
     "453.258b012d.chunk.js.map": "/static/js/453.258b012d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.08444a07.css",
-    "static/js/main.c7dfd147.js"
+    "static/css/main.bab6cd01.css",
+    "static/js/main.2ec3d536.js"
   ]
 }

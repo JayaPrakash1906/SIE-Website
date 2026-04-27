@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -81,5 +82,13 @@ code {
 }
 .fade-in-delay-2 {
   animation-delay: 0.4s;
+}
+
+.font-dm-sans {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.font-dm-serif {
+  font-family: 'DM Serif Display', Georgia, serif;
 }
 
