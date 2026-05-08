@@ -54,21 +54,21 @@ const iconVariants = {
 const AWARDS_SLIDE_INTERVAL_MS = 13000;
 
 const awardsData = [
-   {
-  icon: FaAward,
-  title: "Invention Engine Pitch Session Winners",
-  year: "2026",
-  category: "Pitch Session",
-  description: "The session featured representatives from Invention Engine, Mr. Shailendra and Mr. Aashirwad, who evaluated the participating teams. Based on their assessment, three teams were selected as winners for their outstanding performance and innovation.",
-  winners: [
-    "ScoutEdge (Mr. Satyendra Kumar)",
-    "Zeex AI (Mr. Gaurav Yadav)",
-    "Immortigen (Mr. Aayan Raj)",
-  ],
-  image: img27,
-  gradient: "from-amber-400 to-yellow-600",
-  bgGlow: "bg-amber-500/10",
-},
+  {
+    icon: FaAward,
+    title: "Invention Engine Pitch Session Winners",
+    year: "2026",
+    category: "Pitch Session",
+    description: "The session featured representatives from Invention Engine, Mr. Shailendra and Mr. Aashirwad, who evaluated the participating teams. Based on their assessment, three teams were selected as winners for their outstanding performance and innovation.",
+    winners: [
+      "ScoutEdge (Mr. Satyendra Kumar)",
+      "Zeex AI (Mr. Gaurav Yadav)",
+      "Immortigen (Mr. Aayan Raj)",
+    ],
+    image: img27,
+    gradient: "from-amber-400 to-yellow-600",
+    bgGlow: "bg-amber-500/10",
+  },
   {
     icon: FaTrophy,
     title: "IIT Madras Avishkar Hyperloop Wins Global Hyperloop Competition 2026",
@@ -256,32 +256,25 @@ const Home = () => {
   Application Open for MS(Entrepreneurship) July-2026  — 
   <a href="https://research.iitm.ac.in/" className="font-semibold underline">Apply here  </a>
 </span> */}
-{/* <span className="mx-6">
-  <FaHandPointRight className="inline text-green-600 mr-1" /> 
-  Applications Open for MS (Entrepreneurship) – July 2026 | Two-Step Process: Register & Submit Application | 
-  <a href="https://research.iitm.ac.in/" target="_blank"
-        rel="noreferrer" className="font-semibold underline"> Apply Here  </a>
-</span>
-<span className="mx-6">
-<span className="border border-red-500 text-red-600 text-xs font-semibold px-2 py-1 mr-2 rounded">
-  NEW
-</span>
+      <span className="mx-6">
+        <FaHandPointRight className="inline text-green-600 mr-1" />
+        Applications are now open for UGFIR 2026  -
+        <a href="scholorship/ugfir" target="_blank"
+          rel="noreferrer" className="font-semibold underline"> Click Here  </a>
+      </span>
+      <span className="mx-6">
+        <FaHandPointRight className="inline text-green-600 mr-1" />
+        Applications are now open for UGFIR 2026  -
+        <a href="scholorship/ugfir" target="_blank"
+          rel="noreferrer" className="font-semibold underline"> Click Here  </a>
+      </span><span className="mx-6">
+        <FaHandPointRight className="inline text-green-600 mr-1" />
+        Applications are now open for UGFIR 2026  -
+        <a href="scholorship/ugfir" target="_blank"
+          rel="noreferrer" className="font-semibold underline"> Click Here  </a>
+      </span>
 
-  <FaHandPointRight className="inline text-green-600 mr-1" />
-  
-  Applications Open for <span className="font-semibold">PhD</span> – July 2026 | 
-  Two-Step Process: Register & Submit Application |
-
-  <a
-    href="https://research.iitm.ac.in/"
-    target="_blank"
-    rel="noreferrer"
-    className="font-semibold underline ml-1"
-  >
-    Apply Here
-  </a>
-</span>*/}
-    </> 
+    </>
   ];
 
   const currentEvents = [
@@ -408,9 +401,9 @@ const Home = () => {
               Empowering the next generation of innovators and entrepreneurs at IIT Madras
             </p>
             <a href="/about_us">
-            <button className="bg-transparent border-2 border-white hover:bg-white hover:text-black text-white px-6 py-2 sm:px-8 sm:py-3 rounded-md transition-colors duration-300">
-              Learn More
-            </button></a>
+              <button className="bg-transparent border-2 border-white hover:bg-white hover:text-black text-white px-6 py-2 sm:px-8 sm:py-3 rounded-md transition-colors duration-300">
+                Learn More
+              </button></a>
           </div>
         </div>
       </div>
@@ -588,66 +581,66 @@ const Home = () => {
                 </h3>
               </div>
               <div className="w-full">
-              <Marquee gradient={false} speed={40} pauseOnHover>
-                <div className="flex gap-5 px-2">
-                  {fundedStartups.map((startup, idx) => (
-                    <div
-                      key={idx}
-                      className="w-72 flex-shrink-0 rounded-xl border border-gray-100 px-5 py-4 hover:border-amber-400/70 hover:bg-amber-50/40 transition-colors flex flex-col gap-3 min-h-[130px]"
-                    >
-                      <div className="flex items-center gap-3">
-                        <div className="h-12 w-12 rounded-xl border border-gray-200 bg-white flex items-center justify-center overflow-hidden shrink-0">
-                          {startup.logo ? (
-                            <img
-                              src={startup.logo}
-                              alt={`${startup.name} logo`}
-                              className="h-full w-full object-contain p-1"
-                              loading="lazy"
-                            />
-                          ) : (
-                            <span className="text-xs font-bold text-[#1a1a36]">
-                              {getInitials(startup.name)}
-                            </span>
-                          )}
+                <Marquee gradient={false} speed={40} pauseOnHover>
+                  <div className="flex gap-5 px-2">
+                    {fundedStartups.map((startup, idx) => (
+                      <div
+                        key={idx}
+                        className="w-72 flex-shrink-0 rounded-xl border border-gray-100 px-5 py-4 hover:border-amber-400/70 hover:bg-amber-50/40 transition-colors flex flex-col gap-3 min-h-[130px]"
+                      >
+                        <div className="flex items-center gap-3">
+                          <div className="h-12 w-12 rounded-xl border border-gray-200 bg-white flex items-center justify-center overflow-hidden shrink-0">
+                            {startup.logo ? (
+                              <img
+                                src={startup.logo}
+                                alt={`${startup.name} logo`}
+                                className="h-full w-full object-contain p-1"
+                                loading="lazy"
+                              />
+                            ) : (
+                              <span className="text-xs font-bold text-[#1a1a36]">
+                                {getInitials(startup.name)}
+                              </span>
+                            )}
+                          </div>
+                          <div className="min-w-0">
+                            <p className="font-semibold text-[#1a1a36] truncate">
+                              {startup.name}
+                            </p>
+                            <p className="text-xs text-gray-500 mt-0.5 truncate flex items-center gap-1">
+                              <FaIndustry className="text-[10px] shrink-0" />
+                              {startup.focus}
+                            </p>
+                          </div>
                         </div>
-                        <div className="min-w-0">
-                          <p className="font-semibold text-[#1a1a36] truncate">
-                            {startup.name}
-                          </p>
-                          <p className="text-xs text-gray-500 mt-0.5 truncate flex items-center gap-1">
-                            <FaIndustry className="text-[10px] shrink-0" />
-                            {startup.focus}
-                          </p>
-                        </div>
-                      </div>
-                      <div className="flex items-center justify-between text-[11px] sm:text-xs">
-                        <span className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-100 font-medium">
-                          <FaRupeeSign className="text-[10px]" />
-                          {startup.amount}
-                        </span>
-                        <span className="flex items-center gap-1.5 text-gray-500 uppercase tracking-wide">
-                          <FaChartLine className="text-[10px]" />
-                          {startup.stage}
-                        </span>
-                      </div>
-                      {(startup.program || startup.year) && (
-                        <div className="flex items-center justify-between text-[11px] text-gray-500">
-                          <span className="flex items-center gap-1.5 truncate">
-                            <FaBuilding className="text-[10px] shrink-0" />
-                            {startup.program}
+                        <div className="flex items-center justify-between text-[11px] sm:text-xs">
+                          <span className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-100 font-medium">
+                            <FaRupeeSign className="text-[10px]" />
+                            {startup.amount}
                           </span>
-                          {startup.year && (
-                            <span className="ml-2 shrink-0 flex items-center gap-1">
-                              <FaCalendarAlt className="text-[10px]" />
-                              {startup.year}
-                            </span>
-                          )}
+                          <span className="flex items-center gap-1.5 text-gray-500 uppercase tracking-wide">
+                            <FaChartLine className="text-[10px]" />
+                            {startup.stage}
+                          </span>
                         </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </Marquee>
+                        {(startup.program || startup.year) && (
+                          <div className="flex items-center justify-between text-[11px] text-gray-500">
+                            <span className="flex items-center gap-1.5 truncate">
+                              <FaBuilding className="text-[10px] shrink-0" />
+                              {startup.program}
+                            </span>
+                            {startup.year && (
+                              <span className="ml-2 shrink-0 flex items-center gap-1">
+                                <FaCalendarAlt className="text-[10px]" />
+                                {startup.year}
+                              </span>
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </Marquee>
               </div>
             </div>
           </div>
@@ -773,11 +766,10 @@ const Home = () => {
                     key={idx}
                     type="button"
                     onClick={() => setCurrentAwardIndex(idx)}
-                    className={`rounded-full transition-all duration-200 ${
-                      idx === currentAwardIndex
-                        ? "h-2.5 w-8 bg-[#1a1a36]"
-                        : "h-2 w-2 bg-gray-300 hover:bg-gray-400"
-                    }`}
+                    className={`rounded-full transition-all duration-200 ${idx === currentAwardIndex
+                      ? "h-2.5 w-8 bg-[#1a1a36]"
+                      : "h-2 w-2 bg-gray-300 hover:bg-gray-400"
+                      }`}
                     aria-label={`Award ${idx + 1}`}
                   />
                 ))}
@@ -826,11 +818,10 @@ const Home = () => {
                 href={sec.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`mt-6 inline-block px-6 py-2 rounded-full text-white font-medium ${
-                  index % 2 === 0
-                    ? "bg-green-500 hover:bg-green-600"
-                    : "bg-red-500 hover:bg-red-600"
-                } transition`}
+                className={`mt-6 inline-block px-6 py-2 rounded-full text-white font-medium ${index % 2 === 0
+                  ? "bg-green-500 hover:bg-green-600"
+                  : "bg-red-500 hover:bg-red-600"
+                  } transition`}
               >
                 Explore More
               </a>

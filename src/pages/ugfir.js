@@ -93,7 +93,7 @@ const cohortData = {
       link: "https://www.linkedin.com/in/rakshin-ramesh-ab9025228/",
     },
   ],
-    2024: [
+  2024: [
     {
       img: img10,
       name: "Jayanth K",
@@ -277,8 +277,28 @@ const Ugfir_home = () => {
   return (
     <div className="bg-gray-50">
       <Navbar />
+      <div className="bg-blue-100 py-2 overflow-hidden">
+        <div className="animate-marquee whitespace-nowrap flex items-center gap-4">
+
+          <span className="text-lg font-semibold font-dmsans">
+            Applications are welcome for the UGFIR 2026
+          </span>
+
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScFAuSyFVGARLYRMnyYQaPOeJvaDiFOtZ1rYBsGC8qNMnivMQ/closedform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-blue-800 text-white px-4 py-1 rounded-lg text-sm font-medium hover:bg-blue-900 transition duration-300 ml-3"
+          >
+            Apply Now
+          </a>
+
+        </div>
+      </div>
+
       <div className="text-center py-6 mt-16 px-4 sm:px-6">
         <h2 className="text-xl sm:text-3xl lg:text-4xl font-semibold text-blue-900">
+
           UG Founder in Residence (UGFIR) Program
         </h2>
       </div>

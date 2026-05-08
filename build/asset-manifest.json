@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bab6cd01.css",
-    "main.js": "/static/js/main.2ec3d536.js",
+    "main.css": "/static/css/main.0d86d99e.css",
+    "main.js": "/static/js/main.8cc4bc34.js",
     "static/js/453.258b012d.chunk.js": "/static/js/453.258b012d.chunk.js",
     "static/media/vision.jpg": "/static/media/vision.58c6a2eca6ee01a2f93c.jpg",
     "static/media/iitm_logo.png": "/static/media/iitm_logo.0105d85b3475030de3d8.png",
@@ -146,12 +146,12 @@
     "static/media/jako-mueller.svg": "/static/media/jako-mueller.e1d88f5e738586524cf0da722cf110a0.svg",
     "static/media/hyperverge.webp": "/static/media/hyperverge.0d916a5ebaafd30b2687.webp",
     "index.html": "/index.html",
-    "main.bab6cd01.css.map": "/static/css/main.bab6cd01.css.map",
-    "main.2ec3d536.js.map": "/static/js/main.2ec3d536.js.map",
+    "main.0d86d99e.css.map": "/static/css/main.0d86d99e.css.map",
+    "main.8cc4bc34.js.map": "/static/js/main.8cc4bc34.js.map",
     "453.258b012d.chunk.js.map": "/static/js/453.258b012d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bab6cd01.css",
-    "static/js/main.2ec3d536.js"
+    "static/css/main.0d86d99e.css",
+    "static/js/main.8cc4bc34.js"
   ]
 }
