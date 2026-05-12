@@ -285,7 +285,7 @@ const Ugfir_home = () => {
           </span>
 
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLScFAuSyFVGARLYRMnyYQaPOeJvaDiFOtZ1rYBsGC8qNMnivMQ/closedform"
+            href="https://forms.gle/Dsux5pJX36EVLhnV7"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-800 text-white px-4 py-1 rounded-lg text-sm font-medium hover:bg-blue-900 transition duration-300 ml-3"
