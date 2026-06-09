@@ -38,7 +38,7 @@ export default function ScholarshipPage() {
     { id: 'other', label: 'Other Categories' },
   ];
   const cards = {
-    htra: { title: 'Regular – HTRA', badge: 'Primary Category', sub: 'Half-Time Research Assistantship for eligible full-time scholars', rows: [['Monthly Stipend', '₹14,500 / month'], ['Type', 'Half-Time Research Assistantship'], ['Continuation', 'Subject to GTC recommendation'], ['Eligibility', 'Satisfactory academic & research progress']] },
+    htra: { title: 'Regular – HTRA', badge: 'Primary Category', sub: 'Half-Time Research Assistantship for eligible full-time scholars', rows: [['Monthly Stipend', '₹12,400 / month'], ['Type', 'Half-Time Research Assistantship'], ['Continuation', 'Subject to GTC recommendation'], ['Eligibility', 'Satisfactory academic & research progress']] },
     fellowship: { title: 'Regular – Fellowship', badge: 'External Funding', sub: 'External fellowship from UGC / CSIR / Industry or other agencies', rows: [['Source', 'UGC / CSIR / External Agencies / Industry'], ['Amount', 'As per sponsoring agency norms'], ['Varies by', 'Fellowship type and duration']] },
     project: { title: 'Project-Funded (HTRA / NHTRA)', badge: 'Project Sponsored', sub: 'Funded through sponsored research projects under IC&SR, IIT Madras', rows: [['Project-HTRA', 'Funded via IC&SR project provisions'], ['Project-NHTRA', 'Not eligible for HTRA conversion'], ['Note', 'NHTRA scholars cannot switch to HTRA category']] },
     other: { title: 'Other Categories', badge: 'Self/Employer Funded', sub: 'External, Part-time, and Staff scholars — no institute stipend', rows: [['External', 'Sponsored by employer organization'], ['Part-time', 'Self-funded / employer-supported'], ['Staff', 'As per IITM employment norms']] },
