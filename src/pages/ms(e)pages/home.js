@@ -132,7 +132,7 @@ export default function HomePage() {
           { num: 'M.S.',    lbl: 'Degree awarded by IITM' },
           { num: <FaRocket className="inline-block" />, lbl: 'Startup as Thesis' },
           { num: '2–3 yrs', lbl: 'Flexible duration' },
-          { num: '₹14,500', lbl: 'Monthly HTRA stipend' },
+          { num: '₹12,400', lbl: 'Monthly HTRA stipend' },
           { num: '4',       lbl: 'Deep-tech focus domains' },
         ].map((s, i) => (
           <div key={i} className={`px-4 py-6 md:py-[26px] text-center border-b md:border-b-0 lg:border-r border-[#DDE7F3] last:border-b-0 last:border-r-0`}>

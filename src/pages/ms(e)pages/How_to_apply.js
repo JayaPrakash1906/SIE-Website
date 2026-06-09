@@ -96,7 +96,7 @@ export default function ApplyPage() {
               { done: true, title: 'Applications open', desc: 'The application portal opens and faculty-listed problem statements are published.', date: 'January' },
               { done: true, title: 'Application deadline', desc: 'All applications and supporting documents due by the announced deadline.', date: 'March' },
               { done: true, title: 'Shortlisting', desc: 'Faculty review applications and shortlist candidates for interview.', date: 'March – April' },
-              { done: false, title: 'Interviews', desc: 'Online interviews conducted by faculty panel covering your problem statement, background, and entrepreneurial potential.', date: 'April' },
+              { done: true, title: 'Interviews', desc: 'Online interviews conducted by faculty panel covering your problem statement, background, and entrepreneurial potential.', date: 'April' },
               { done: false, title: 'Offer letters issued', desc: 'Successful candidates receive formal offer letter from IIT Madras.', date: 'April – May' },
               { done: false, title: 'Programme start', desc: 'New cohort begins their M.S. (Entrepreneurship) journey at IIT Madras.', date: 'July' },
             ].map((t, i) => (

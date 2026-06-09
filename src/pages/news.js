@@ -9,6 +9,7 @@ import img4 from "../assets/News/news4.JPG"
 import img5 from "../assets/News/news5.jpg"
 import img6 from "../assets/News/news6.jpg"
 import img7 from "../assets/News/news7.jpg"
+import img8 from "../assets/News/news8.jpg"
 // Single News Card
 const NewsCard = ({ article }) => {
   const showFullImage = article.id === 7;
@@ -85,6 +86,17 @@ const News = () => {
   const itemsPerPage = 8;
 
   const newsData = [
+    {
+      id: 8,
+      title: 'SIE IIT Madras Participates in IIT Madras Technology Summit 2026 at Bharat Mandapam, New Delhi ',
+      date: 'May 5, 2025',
+      readTime: '6 min read',
+      subtitle:'The School of Innovation & Entrepreneurship (SIE), IIT Madras, participated in the inaugural IIT Madras Technology Summit 2026 held at Bharat Mandapam, New Delhi. The summit, inaugurated by Shri Dharmendra Pradhan, Hon’ble Minister of Education, brought together leaders from government, industry, and academia to explore technology-driven solutions, innovation, research, and entrepreneurship for building a Viksit Bharat.',
+      views: 112,
+      comments: 14,
+      image: img8,
+      link: 'https://www.linkedin.com/posts/iitmadras-technologysummit2026-viksitbharat-ugcPost-7457350435700363264-SfQY/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADFikn4B6jA0Ct1Y84TowFZRR2JHg75s9fg',
+    }, 
     {
       id: 7,
       title: 'Delta Expo 2026: Showcasing Innovation at IIT Madras ',
