@@ -258,20 +258,20 @@ const Home = () => {
 </span> */}
       <span className="mx-6">
         <FaHandPointRight className="inline text-green-600 mr-1" />
-        Applications are now open for UGFIR 2026  -
-        <a href="scholorship/ugfir" target="_blank"
-          rel="noreferrer" className="font-semibold underline"> Click Here  </a>
+        Applications are closed for UGFIR 2026  
+        {/* <a href="scholorship/ugfir" target="_blank"
+          rel="noreferrer" className="font-semibold underline"> Click Here  </a> */}
       </span>
       <span className="mx-6">
         <FaHandPointRight className="inline text-green-600 mr-1" />
-        Applications are now open for UGFIR 2026  -
-        <a href="scholorship/ugfir" target="_blank"
-          rel="noreferrer" className="font-semibold underline"> Click Here  </a>
+        Applications are closed for UGFIR 2026  
+        {/* <a href="scholorship/ugfir" target="_blank"
+          rel="noreferrer" className="font-semibold underline"> Click Here  </a> */}
       </span><span className="mx-6">
         <FaHandPointRight className="inline text-green-600 mr-1" />
-        Applications are now open for UGFIR 2026  -
-        <a href="scholorship/ugfir" target="_blank"
-          rel="noreferrer" className="font-semibold underline"> Click Here  </a>
+        Applications are closed for UGFIR 2026  
+        {/* <a href="scholorship/ugfir" target="_blank"
+          rel="noreferrer" className="font-semibold underline"> Click Here  </a> */}
       </span>
 
     </>
