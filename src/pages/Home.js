@@ -245,34 +245,34 @@ const Home = () => {
       {" — "}
       <FaClock className="inline text-yellow-500 mr-1" /> 5:00 PM onwards
       {" — "} */}
-      {/* <span className="mx-6">
+      <span className="mx-6">
   <FaHandPointRight className="inline text-green-600 mr-1" /> 
-  Application Open for MS(Entrepreneurship) July-2026  — 
-  <a href="https://research.iitm.ac.in/" className="font-semibold underline">Apply here</a>
+  Meet our current MS (Entrepreneurship) scholars and explore their research, startups, and entrepreneurial journey |   
+  <a href="ms(e)/project" className="font-semibold underline"> Click here</a>
 </span>
 
-<span className="mx-6">
+{/* <span className="mx-6">
   <FaHandPointRight className="inline text-green-600 mr-1" /> 
-  Application Open for MS(Entrepreneurship) July-2026  — 
-  <a href="https://research.iitm.ac.in/" className="font-semibold underline">Apply here  </a>
+  
+  <a href="ms(e)/project" className="font-semibold underline">Apply here  </a>
 </span> */}
-      <span className="mx-6">
+      {/* <span className="mx-6">
         <FaHandPointRight className="inline text-green-600 mr-1" />
-        Applications are closed for UGFIR 2026  
-        {/* <a href="scholorship/ugfir" target="_blank"
-          rel="noreferrer" className="font-semibold underline"> Click Here  </a> */}
+        List of MS(E) Students – 2026 | Click Here
+        <a href="scholorship/ugfir" target="_blank"
+          rel="noreferrer" className="font-semibold underline"> Click Here  </a>
       </span>
       <span className="mx-6">
         <FaHandPointRight className="inline text-green-600 mr-1" />
-        Applications are closed for UGFIR 2026  
-        {/* <a href="scholorship/ugfir" target="_blank"
-          rel="noreferrer" className="font-semibold underline"> Click Here  </a> */}
+         List of MS(E) Students – 2026 | 
+        <a href="scholorship/ugfir" target="_blank"
+          rel="noreferrer" className="font-semibold underline"> Click Here  </a>
       </span><span className="mx-6">
         <FaHandPointRight className="inline text-green-600 mr-1" />
-        Applications are closed for UGFIR 2026  
-        {/* <a href="scholorship/ugfir" target="_blank"
-          rel="noreferrer" className="font-semibold underline"> Click Here  </a> */}
-      </span>
+         List of MS(E) Students – 2026 | 
+        <a href="scholorship/ugfir" target="_blank"
+          rel="noreferrer" className="font-semibold underline"> Click Here  </a>
+      </span> */}
 
     </>
   ];
