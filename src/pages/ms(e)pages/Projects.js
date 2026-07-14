@@ -227,18 +227,19 @@ export default function ProjectsPage() {
       >
 
         {/* ── PAGE HEADER ── */}
-        <div style={{ backgroundColor: '#fff', borderBottom: '1px solid #E4ECF4', padding: '20px 32px 18px' }}>
+        <div className="px-4 pt-4 pb-4 lg:px-8 lg:pt-5 lg:pb-[18px]" style={{ backgroundColor: '#fff', borderBottom: '1px solid #E4ECF4' }}>
           <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
             <div>
               <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', color: '#185FA5', textTransform: 'uppercase', marginBottom: 4 }}>
                 MS(E) Programme · IIT Madras
               </p>
-              <h1 style={{ fontSize: 22, fontWeight: 700, color: '#0C1F3C', margin: 0, lineHeight: 1.2 }}>
+              <h1 className="text-lg lg:text-[22px]" style={{ fontWeight: 700, color: '#0C1F3C', margin: 0, lineHeight: 1.2 }}>
                 Student Startups
               </h1>
             </div>
             <button
               onClick={() => go('apply')}
+              className="w-full sm:w-auto justify-center"
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: 7,
                 backgroundColor: '#185FA5', color: '#fff',
@@ -253,11 +254,11 @@ export default function ProjectsPage() {
         </div>
 
         {/* ── TWO-COLUMN BODY ── */}
-        <div style={{ display: 'flex', flex: 1, overflow: 'hidden', height: 'calc(100vh - 161px)' }}>
+        <div className="flex flex-col lg:flex-row lg:overflow-hidden lg:h-[calc(100vh-161px)]" style={{ flex: 1 }}>
 
-          {/* ── SIDEBAR ── */}
+          {/* ── SIDEBAR (large screens only — unchanged) ── */}
           <aside
-            className="block"
+            className="hidden lg:block"
             style={{
               width: 240, flexShrink: 0,
               borderRight: '1px solid #E4ECF4',
@@ -280,8 +281,41 @@ export default function ProjectsPage() {
             ))}
           </aside>
 
+          {/* ── THEME FILTER (medium & small screens only) ── */}
+          <div
+            className="lg:hidden flex gap-2 overflow-x-auto px-4 py-3"
+            style={{ backgroundColor: '#fff', borderBottom: '1px solid #E4ECF4', WebkitOverflowScrolling: 'touch' }}
+          >
+            {Object.entries(DOMAIN_META).map(([key, meta]) => {
+              const Icon = meta.icon;
+              const active = activeDomain === key;
+              return (
+                <button
+                  key={key}
+                  onClick={() => setActiveDomain(key)}
+                  className="flex-shrink-0"
+                  style={{
+                    display: 'inline-flex', alignItems: 'center', gap: 6,
+                    fontSize: 12.5, fontWeight: 600, whiteSpace: 'nowrap',
+                    padding: '7px 12px', borderRadius: 99, border: 'none', cursor: 'pointer',
+                    backgroundColor: active ? meta.color : meta.bg,
+                    color: active ? '#fff' : meta.text,
+                  }}
+                >
+                  <Icon size={13} strokeWidth={2.2} />
+                  {meta.label}
+                  <span style={{
+                    fontSize: 10.5, fontWeight: 700, opacity: active ? 0.9 : 0.6,
+                  }}>
+                    {getCount(key)}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+
           {/* ── MAIN CONTENT ── */}
-          <div style={{ flex: 1, overflowY: 'auto', padding: '24px 28px', paddingBottom: 60 }}>
+          <div className="px-4 py-5 lg:px-7 lg:py-6" style={{ flex: 1, overflowY: 'auto', paddingBottom: 60 }}>
 
             {/* Count + hint row */}
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 20 }}>
@@ -294,7 +328,7 @@ export default function ProjectsPage() {
                   </span>
                 )}
               </p>
-              <span style={{ fontSize: 11.5, color: '#C5D5E8' }} className="hidden sm:block">
+              <span style={{ fontSize: 11.5, color: '#C5D5E8' }} className="hidden lg:block">
                 Click a card to expand
               </span>
             </div>
@@ -349,7 +383,7 @@ export default function ProjectsPage() {
                             backgroundColor: '#fff',
                             border: `1px solid ${expanded ? meta.color + '55' : '#E4ECF4'}`,
                             borderRadius: 14,
-                            overflow: 'visible',
+                            overflow: 'hidden',
                             transition: 'border-color 0.15s, box-shadow 0.15s',
                             boxShadow: expanded ? `0 0 0 3px ${meta.color}18` : 'none',
                           }}
@@ -520,11 +554,14 @@ export default function ProjectsPage() {
                                 Avatar is centered above the text block; name,
                                 department, and email are each forced onto a
                                 single line with their FULL text (no truncation,
-                                no clamping) — the column widens to fit instead. */}
+                                no clamping) — the column widens to fit instead.
+                                Clicking anywhere in this column opens the
+                                faculty detail modal (with bio) instead of
+                                toggling the card's expand/collapse state. */}
                             {fg.faculty && (
                               <div
                                 style={{ padding: '16px 20px 16px 12px', flexShrink: 0, width: 260 }}
-                                className="hidden sm:block"
+                                className="hidden md:block"
                               >
                                 {/* Avatar — centered, bumped up from 52 to 64 */}
                                 <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 8 }}>
@@ -540,7 +577,6 @@ export default function ProjectsPage() {
                                 <p style={{
                                   fontSize: 12, fontWeight: 700, color: '#0C1F3C',
                                   margin: '0 0 5px', lineHeight: 1.3, textAlign: 'center',
-                                  whiteSpace: 'nowrap',
                                 }}>
                                   {fg.faculty.name}
                                 </p>
@@ -554,7 +590,6 @@ export default function ProjectsPage() {
                                     <BookOpen size={10} strokeWidth={2} style={{ color: '#6B7C93', flexShrink: 0 }} />
                                     <span style={{
                                       fontSize: 10.5, color: '#6B7C93', lineHeight: 1.4,
-                                      whiteSpace: 'nowrap',
                                     }}>
                                       {fg.faculty.dept}
                                     </span>
@@ -572,9 +607,7 @@ export default function ProjectsPage() {
                                       href={`mailto:${fg.faculty.email}`}
                                       onClick={e => e.stopPropagation()}
                                       style={{
-                                        fontSize: 10.5, color: '#185FA5', textDecoration: 'none',
-                                        whiteSpace: 'nowrap',
-                                        lineHeight: 1.3,
+                                        fontSize: 10.5, color: '#185FA5', textDecoration: 'none', lineHeight: 1.3,
                                       }}
                                     >
                                       {fg.faculty.email}
@@ -641,16 +674,22 @@ export default function ProjectsPage() {
 
                               {/* Faculty detail card in expanded view.
                                   Only rendered when faculty is assigned.
-                                  Avatar bumped up; dept/email kept on a single
-                                  line each, full text, no truncation. */}
+                                  FIX: dept/email no longer force nowrap — they
+                                  wrap onto multiple lines on narrow screens
+                                  instead of overflowing past the card border.
+                                  Clicking it opens the same faculty modal
+                                  (with bio). */}
                               {fg.faculty && (
-                                <div style={{
-                                  display: 'flex', alignItems: 'center', gap: 14,
-                                  backgroundColor: '#fff',
-                                  border: `1px solid ${meta.color}33`,
-                                  borderRadius: 10,
-                                  padding: '14px 16px',
-                                }}>
+                                <div
+                                  style={{
+                                    display: 'flex', alignItems: 'flex-start', gap: 14,
+                                    backgroundColor: '#fff',
+                                    border: `1px solid ${meta.color}33`,
+                                    borderRadius: 10,
+                                    padding: '14px 16px',
+                                    minWidth: 0,
+                                  }}
+                                >
                                   {/* Avatar */}
                                   <div style={{ flexShrink: 0 }}>
                                     <Avatar
@@ -662,38 +701,45 @@ export default function ProjectsPage() {
                                   </div>
 
                                   {/* Text */}
-                                  <div style={{ minWidth: 0 }}>
+                                  <div style={{ minWidth: 0, flex: 1 }}>
                                     {/* Name — always shown, full text */}
                                     <p style={{
                                       fontSize: 14, fontWeight: 700, color: '#0C1F3C',
                                       margin: '0 0 4px', lineHeight: 1.3,
-                                      whiteSpace: 'nowrap',
                                     }}>
                                       {fg.faculty.name}
                                     </p>
 
-                                    {/* Dept — only when non-empty, single line, full text */}
+                                    {/* Dept — only when non-empty, wraps instead of overflowing */}
                                     {fg.faculty.dept && (
-                                      <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 4 }}>
-                                        <BookOpen size={11} strokeWidth={2} style={{ color: meta.color, flexShrink: 0 }} />
-                                        <span style={{ fontSize: 12, color: '#4A6080', lineHeight: 1.4, whiteSpace: 'nowrap' }}>
+                                      <div style={{ display: 'flex', alignItems: 'flex-start', gap: 6, marginBottom: 4, minWidth: 0 }}>
+                                        <BookOpen size={11} strokeWidth={2} style={{ color: meta.color, flexShrink: 0, marginTop: 2 }} />
+                                        <span style={{ fontSize: 12, color: '#4A6080', lineHeight: 1.4 }}>
                                           {fg.faculty.dept}
                                         </span>
                                       </div>
                                     )}
 
-                                    {/* Email — only when non-empty, single line, full text */}
+                                    {/* Email — only when non-empty, wraps/breaks instead of overflowing */}
                                     {fg.faculty.email && (
-                                      <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-                                        <Mail size={11} strokeWidth={2} style={{ color: meta.color, flexShrink: 0 }} />
+                                      <div style={{ display: 'flex', alignItems: 'flex-start', gap: 6, marginBottom: fg.faculty.bio ? 8 : 0, minWidth: 0 }}>
+                                        <Mail size={11} strokeWidth={2} style={{ color: meta.color, flexShrink: 0, marginTop: 2 }} />
                                         <a
                                           href={`mailto:${fg.faculty.email}`}
-                                          onClick={e => e.stopPropagation()}
-                                          style={{ fontSize: 12, color: '#185FA5', textDecoration: 'none', lineHeight: 1.4, whiteSpace: 'nowrap' }}
+                                          style={{ fontSize: 12, color: '#185FA5', textDecoration: 'none', lineHeight: 1.4, wordBreak: 'break-word' }}
                                         >
                                           {fg.faculty.email}
                                         </a>
                                       </div>
+                                    )}
+
+                                    {/* Bio — full text, always visible in this bottom card */}
+                                    {fg.faculty.bio && (
+                                      <p style={{
+                                        fontSize: 12, color: '#6B7C93', margin: 0, lineHeight: 1.6,
+                                      }}>
+                                        {fg.faculty.bio}
+                                      </p>
                                     )}
                                   </div>
                                 </div>

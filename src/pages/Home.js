@@ -245,11 +245,11 @@ const Home = () => {
       {" — "}
       <FaClock className="inline text-yellow-500 mr-1" /> 5:00 PM onwards
       {" — "} */}
-      <span className="mx-6">
+      {/* <span className="mx-6">
   <FaHandPointRight className="inline text-green-600 mr-1" /> 
   Meet our current MS (Entrepreneurship) scholars and explore their research, startups, and entrepreneurial journey |   
   <a href="ms(e)/project" className="font-semibold underline"> Click here</a>
-</span>
+</span> */}
 
 {/* <span className="mx-6">
   <FaHandPointRight className="inline text-green-600 mr-1" /> 

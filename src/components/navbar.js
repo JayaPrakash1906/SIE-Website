@@ -8,6 +8,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [isEventsOpen, setIsEventsOpen] = useState(false);
   const [isStudentsOpen, setIsStudentsOpen] = useState(false);
+  const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [isInnosphereOpen, setIsInnosphereOpen] = useState(false);
   const [isScholarshipOpen, setIsScholarshipOpen] = useState(false);
@@ -16,6 +17,7 @@ const Navbar = () => {
   const [isMobileAcademicsOpen, setIsMobileAcademicsOpen] = useState(false);
   const [isAcademicsMseOpen, setIsAcademicsMseOpen] = useState(false);
   const [isMobileAcademicsMseOpen, setIsMobileAcademicsMseOpen] = useState(false);
+  const [isMobileAboutOpen, setIsMobileAboutOpen] = useState(false);
 
   const [isMobileEventsOpen, setIsMobileEventsOpen] = useState(false);
   const [isMobileInnosphereOpen, setIsMobileInnosphereOpen] = useState(false);
@@ -24,11 +26,13 @@ const Navbar = () => {
   const [isMobilePodcastOpen, setIsMobilePodcastOpen] = useState(false);
 
   const eventsRef = useRef(null);
+  const aboutRef = useRef(null);
   const academicsRef = useRef(null);
 
   useEffect(() => {
     function handleClickOutside(e) {
-      if (eventsRef.current && !eventsRef.current.contains(e.target) &&
+      if (aboutRef.current && !aboutRef.current.contains(e.target) &&
+        eventsRef.current && !eventsRef.current.contains(e.target) &&
         academicsRef.current && !academicsRef.current.contains(e.target)) {
         setIsEventsOpen(false);
         setIsStudentsOpen(false);
@@ -37,6 +41,7 @@ const Navbar = () => {
         setIsMagazineOpen(false);
         setIsPodcastOpen(false);
         setIsAcademicsMseOpen(false);
+        setIsAboutOpen(false);
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
@@ -45,6 +50,7 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+    setIsMobileAboutOpen(false);
     if (menuOpen) {
       setIsMobileEventsOpen(false);
       setIsMobileInnosphereOpen(false);
@@ -56,6 +62,7 @@ const Navbar = () => {
 
   const closeMenu = () => {
     setMenuOpen(false);
+    setIsMobileAboutOpen(false);
     setIsMobileEventsOpen(false);
     setIsMobileInnosphereOpen(false);
     setIsMobileScholarshipOpen(false);
@@ -158,15 +165,33 @@ const Navbar = () => {
         >
           Home
         </NavLink>
-        <NavLink
-          to="/about_us"
-          className={({ isActive }) =>
-            `px-6 hover:text-amber-400 transition-colors duration-200 ${isActive ? "text-amber-400 border-b-2 border-amber-400 pb-1" : "text-white"
-            }`
-          }
-        >
-          About
-        </NavLink>
+        {/* About Dropdown */}
+        <div className="relative z-50" ref={aboutRef}>
+          <button
+            onClick={() => {
+              setIsAboutOpen(!isAboutOpen);
+              setIsEventsOpen(false);
+              setIsStudentsOpen(false);
+            }}
+            className="hover:text-amber-400 flex items-center gap-1 px-6"
+          >
+            About
+            <FaChevronDown
+              className={`transition-transform duration-300 ${isAboutOpen ? "rotate-180" : "rotate-0"
+                }`}
+            />
+          </button>
+          {isAboutOpen && (
+            <ul className="absolute top-full mt-1 left-0 w-48 bg-white text-black font-medium shadow-lg border-t border-black z-50">
+              <li className="border-b border-black last:border-none">
+                {renderLink("Our School", "/about_us", "block px-4 py-2 hover:bg-amber-400", () => setIsAboutOpen(false))}
+              </li>
+              <li className="border-b border-black last:border-none">
+                {renderLink("Our Team", "/our-team", "block px-4 py-2 hover:bg-amber-400", () => setIsAboutOpen(false))}
+              </li>
+            </ul>
+          )}
+        </div>
         <NavLink
           to="/news"
           className={({ isActive }) =>
@@ -401,16 +426,26 @@ const Navbar = () => {
               >
                 Home
               </NavLink>
-              <NavLink
-                to="/about_us"
-                onClick={closeMenu}
-                className={({ isActive }) =>
-                  `hover:text-amber-500 transition-colors duration-200 ${isActive ? "text-amber-500 border-l-4 border-amber-500 pl-2" : "text-gray-800"
-                  }`
-                }
+              {/* Mobile About */}
+              <button
+                onClick={() => setIsMobileAboutOpen(!isMobileAboutOpen)}
+                className="flex justify-between items-center w-full"
               >
-                About
-              </NavLink>
+                <span className="hover:text-amber-500">About</span>
+                <FaChevronDown
+                  className={`${isMobileAboutOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+              {isMobileAboutOpen && (
+                <div className="ml-4 mt-1">
+                  {renderLink("Our School", "/about_us", "block py-1", closeMenu)}
+                  {renderLink("Our Team", "/our-team", "block py-1", closeMenu)}
+                </div>
+              )}
+
+
+
+
               <NavLink
                 to="/news"
                 onClick={closeMenu}

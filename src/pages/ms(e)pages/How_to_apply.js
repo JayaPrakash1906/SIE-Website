@@ -97,8 +97,8 @@ export default function ApplyPage() {
               { done: true, title: 'Application deadline', desc: 'All applications and supporting documents due by the announced deadline.', date: 'March' },
               { done: true, title: 'Shortlisting', desc: 'Faculty review applications and shortlist candidates for interview.', date: 'March – April' },
               { done: true, title: 'Interviews', desc: 'Online interviews conducted by faculty panel covering your problem statement, background, and entrepreneurial potential.', date: 'April' },
-              { done: false, title: 'Offer letters issued', desc: 'Successful candidates receive formal offer letter from IIT Madras.', date: 'April – May' },
-              { done: false, title: 'Programme start', desc: 'New cohort begins their M.S. (Entrepreneurship) journey at IIT Madras.', date: 'July' },
+              { done: true, title: 'Offer letters issued', desc: 'Successful candidates receive formal offer letter from IIT Madras.', date: 'April – May' },
+              { done: true, title: 'Programme start', desc: 'New cohort begins their M.S. (Entrepreneurship) journey at IIT Madras.', date: 'July' },
             ].map((t, i) => (
               <div key={i} className="flex gap-6 pb-7 relative">
                 <div className={`w-10 h-10 rounded-full text-sm font-bold flex items-center justify-center shrink-0 z-10 border-4 border-white ${t.done ? 'bg-[#185FA5] text-white' : 'bg-[#E6F1FB] text-[#0C3461]'}`}>

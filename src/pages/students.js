@@ -72,7 +72,7 @@ import profimg19 from "../assets/ms_mentor/ravikumar.jpg"
 import profimg20 from "../assets/ms_mentor/viji.jpg"
 import profimg21 from "../assets/ms_mentor/kothandam.jpg"
 import profimg22 from "../assets/ms_mentor/satyan.jpg"
-import profimg23 from "../assets/ms_mentor/balaji.jpg"
+import profimg23 from "../assets/ms_mentor/Balaji Srinivasan.jpg"
 import profimg24 from "../assets/ms_mentor/Pradeep.png"
 import profimg25 from "../assets/ms_mentor/ramanthan.jpg"
 import profimg26 from "../assets/ms_mentor/piyush.jpg"
@@ -87,45 +87,45 @@ import profimg30 from "../assets/ms_mentor/santosh_sahu.jpg"
 // the SAME faculty object (same key in STUDENT_FACULTY_MAP) and the UI will
 // automatically group their projects under one faculty card.
 //
-// dept/email are left blank where not yet provided — fill them in here and
-// both the admin table and the Student Startups page update immediately.
+// dept/email/bio are left blank where not yet provided — fill them in here
+// and both the admin table and the Student Startups page update immediately.
 //
 // NOTE: all `dept` values are normalized to start with "Department of ..."
 // so the faculty cell renders consistently across the table.
 export const FACULTY_DIRECTORY = {
   // ── 2026 batch faculty ──
-  "fac-imon-chakraborty":          { id: "fac-imon-chakraborty",          name: "Prof.Imon Chakraborty",        email: "imon@iitm.ac.in", dept: "Department of Management Studies", img:profimg1  },
-  "fac-gl-samuel":                 { id: "fac-gl-samuel",                 name: "Prof.GL Samuel",               email: "samuelgl@iitm.ac.in", dept: "Department of Mechanical Engineering", img: profimg2},
-  "fac-nitin-muralidharan":        { id: "fac-nitin-muralidharan",        name: "Prof. Nitin Muralidharan",  email: "muralidharan@iitm.ac.in", dept: "Department of Chemical Engineering", img: profimg3 },
-  "fac-mahesh-panchagnula":        { id: "fac-mahesh-panchagnula",        name: "Prof. Mahesh Panchagnula",      email: "mvp@iitm.ac.in", dept: "Department of Applied Mechanics", img: profimg4 },
-  "fac-vivek-samu":                { id: "fac-vivek-samu",                name: "Prof. Vivek Samu",              email: "viveksamu@iitm.ac.in", dept: "Department of Civil Engineering", img: profimg5 },
-  "fac-vv-raghavendra-sai":        { id: "fac-vv-raghavendra-sai",        name: "Prof. V V Raghavendra Sai",     email: "vvrsai@iitm.ac.in", dept: "Department of Applied Mechanics", img: profimg6 },
-  "fac-tiju-thomas":               { id: "fac-tiju-thomas",               name: "Prof. Tiju Thomas",             email: "tijuthomas@iitm.ac.in", dept: "Department of Metallurgical and Materials Engineering", img: profimg7 },
-  "fac-raghunathan-rengasamy":     { id: "fac-raghunathan-rengasamy",     name: "Prof. Raghunathan Rengasamy",   email: "raghur@iitm.ac.in", dept: "Department of Chemical Engineering", img: profimg8 },
-  "fac-krishnan-balasubramanian":  { id: "fac-krishnan-balasubramanian",  name: "Prof. Krishnan Balasubramanian",email: "balas@iitm.ac.in", dept: "Department of Mechanical Engineering", img: profimg9 },
-  "fac-ranjit-bauri":              { id: "fac-ranjit-bauri",              name: "Prof. Ranjit Bauri",            email: "bauri@iitm.ac.in", dept: "Department of Metallurgical and Materials Engineering", img: profimg10 },
-  "fac-sivarama-krishnan":         { id: "fac-sivarama-krishnan",         name: "Prof. Sivarama Krishnan",       email: "srkrishnan@iitm.ac.in", dept: "Department of Physics", img: profimg11 },
-  "fac-thenmozhi-m":               { id: "fac-thenmozhi-m",               name: "Prof. M. Thenmozhi",             email: "mtm@iitm.ac.in", dept: "Department of Management Studies", img: profimg12 },
-  "fac-bhuvanesh-srinivasan":      { id: "fac-bhuvanesh-srinivasan",      name: "Prof. Bhuvanesh Srinivasan",    email: "bhuvanesh.srini.iitm.ac.in", dept: "Department of Metallurgical and Materials Engineering", img: profimg13 },
+  "fac-imon-chakraborty":          { id: "fac-imon-chakraborty",          name: "Prof.Imon Chakraborty",        email: "imon@iitm.ac.in", dept: "Department of Management Studies", img:profimg1, bio: "Assistant Professor, Department of Management Studies. Works on digital transformation, entrepreneurship, and healthcare technology ventures." },
+  "fac-gl-samuel":                 { id: "fac-gl-samuel",                 name: "Prof.GL Samuel",               email: "samuelgl@iitm.ac.in", dept: "Department of Mechanical Engineering", img: profimg2, bio: "Professor of Mechanical Engineering. Specializes in advanced manufacturing, precision engineering, and biomedical devices." },
+  "fac-nitin-muralidharan":        { id: "fac-nitin-muralidharan",        name: "Prof. Nitin Muralidharan",  email: "muralidharan@iitm.ac.in", dept: "Department of Chemical Engineering", img: profimg3, bio: "Assistant Professor of Chemical Engineering. Research in advanced energy materials, lithium-ion and solid-state batteries, and sustainable energy storage." },
+  "fac-mahesh-panchagnula":        { id: "fac-mahesh-panchagnula",        name: "Prof. Mahesh Panchagnula",      email: "mvp@iitm.ac.in", dept: "Department of Applied Mechanics", img: profimg4, bio: "Professor of Applied Mechanics, expert in thermal sciences and fluid mechanics. He actively mentors deep-tech entrepreneurial ventures." },
+  "fac-vivek-samu":                { id: "fac-vivek-samu",                name: "Prof. Vivek Samu",              email: "viveksamu@iitm.ac.in", dept: "Department of Civil Engineering", img: profimg5, bio: "Assistant Professor of Civil Engineering. Focuses on non-destructive evaluation of infrastructure and AI-driven structural health monitoring." },
+  "fac-vv-raghavendra-sai":        { id: "fac-vv-raghavendra-sai",        name: "Prof. V V Raghavendra Sai",     email: "vvrsai@iitm.ac.in", dept: "Department of Applied Mechanics", img: profimg6, bio: "Associate Professor, Applied Mechanics. Specializes in biosensors, fiber-optic sensors, and biomedical diagnostics." },
+  "fac-tiju-thomas":               { id: "fac-tiju-thomas",               name: "Prof. Tiju Thomas",             email: "tijuthomas@iitm.ac.in", dept: "Department of Metallurgical and Materials Engineering", img: profimg7, bio: "Professor of Metallurgical & Materials Engineering. He works in advanced materials, tribology, and mechanical systems, supporting technology commercialization." },
+  "fac-raghunathan-rengasamy":     { id: "fac-raghunathan-rengasamy",     name: "Prof. Raghunathan Rengasamy",   email: "raghur@iitm.ac.in", dept: "Department of Chemical Engineering", img: profimg8, bio: "Professor of Chemical Engineering. He is an expert in process systems engineering and industrial optimization, fostering innovation in manufacturing industries." },
+  "fac-krishnan-balasubramanian":  { id: "fac-krishnan-balasubramanian",  name: "Prof. Krishnan Balasubramanian",email: "balas@iitm.ac.in", dept: "Department of Mechanical Engineering", img: profimg9, bio: "Professor of Mechanical Engineering, specializing in non-destructive evaluation, robotics, and sensing technologies. He mentors interdisciplinary technology ventures." },
+  "fac-ranjit-bauri":              { id: "fac-ranjit-bauri",              name: "Prof. Ranjit Bauri",            email: "bauri@iitm.ac.in", dept: "Department of Metallurgical and Materials Engineering", img: profimg10, bio: "Professor of Metallurgical & Materials Engineering. His research focuses on materials engineering and advanced manufacturing processes." },
+  "fac-sivarama-krishnan":         { id: "fac-sivarama-krishnan",         name: "Prof. Sivarama Krishnan",       email: "srkrishnan@iitm.ac.in", dept: "Department of Physics", img: profimg11, bio: "Associate Professor, Physics. Works on ultrafast laser physics, nanoplasmas, and photonics." },
+  "fac-thenmozhi-m":               { id: "fac-thenmozhi-m",               name: "Prof. M. Thenmozhi",             email: "mtm@iitm.ac.in", dept: "Department of Management Studies", img: profimg12, bio: "Professor of Management Studies. She specializes in finance, entrepreneurship, and business strategy, mentoring scholars in startup growth and innovation." },
+  "fac-bhuvanesh-srinivasan":      { id: "fac-bhuvanesh-srinivasan",      name: "Prof. Bhuvanesh Srinivasan",    email: "bhuvanesh.srini.iitm.ac.in", dept: "Department of Metallurgical and Materials Engineering", img: profimg13, bio: "Faculty member, Department of Metallurgical and Materials Engineering, contributing to emerging technologies and interdisciplinary innovation initiatives." },
 
   // ── 2021–2025 batch faculty ──
-  "fac-varunkumar-s":              { id: "fac-varunkumar-s",              name: "Prof. Varunkumar S",            email: "varuns@iitm.ac.in",   dept: "Department of Mechanical Engineering", img: profimg14 },
-  "fac-parasuraman-swaminathan":   { id: "fac-parasuraman-swaminathan",   name: "Prof. Parasuraman Swaminathan", email: "swamnthn@iitm.ac.in", dept: "Department of Metallurgical and Materials Engineering", img: profimg15 },
-  "fac-prabhu-rajagopal":          { id: "fac-prabhu-rajagopal",          name: "Prof. Prabhu Rajagopal",      email: "prajagopal@iitm.ac.in", dept: "Department of Mechanical Engineering", img: profimg16 },
-  "fac-boby-george":               { id: "fac-boby-george",               name: "Prof. Dr. Boby George",       email: "boby@iitm.ac.in",     dept: "Department of Electrical Engineering", img: profimg17 },
-  "fac-satyanarayanan-seshadri":   { id: "fac-satyanarayanan-seshadri",   name: "Prof. Satyanarayanan Seshadri", email: "satya@iitm.ac.in",   dept: "Department of Applied Mechanics", img: profimg18 },
-  "fac-ravi-kumar-nv":             { id: "fac-ravi-kumar-nv",             name: "Prof. Ravi Kumar N V",        email: "nvrk@smail.iitm.ac.in", dept: "Department of Metallurgical and Materials Engineering", img: profimg19 },
-  "fac-vijayalakshmi":             { id: "fac-vijayalakshmi",             name: "Prof. Vijayalakshmi",         email: "viji@iitm.ac.in",     dept: "Department of Management Studies", img: profimg20 },
-  "fac-kothandaraman-r":           { id: "fac-kothandaraman-r",           name: "Prof. Kothandaraman R",             email: "rkraman@iitm.ac.in",  dept: "Department of Chemistry", img: profimg21 },
-  "fac-sathyan-subbiah":           { id: "fac-sathyan-subbiah",           name: "Prof. Sathyan Subbiah",       email: "sathyans@iitm.ac.in", dept: "Department of Mechanical Engineering", img: profimg22 },
-  "fac-balaji-srinivasan":         { id: "fac-balaji-srinivasan",         name: "Prof. Balaji Srinivasan",       email: "sbalaji@iitm.ac.in",  dept: "Department of Mechanical Engineering", img: profimg23 },
-  "fac-t-pradeep":                 { id: "fac-t-pradeep",                 name: "Prof. T Pradeep",             email: "pradeep@iitm.ac.in",  dept: "Department of Chemistry", img: profimg24 },
-  "fac-ramanathan-m":              { id: "fac-ramanathan-m",              name: "Prof. Ramanathan M",                email: "mraman@iitm.ac.in",   dept: "Department of Engineering Design", img: profimg25 },
-  "fac-piyush-shakya":             { id: "fac-piyush-shakya",             name: "Prof. Piyush Shakya",           email: "pshakya@iitm.ac.in",  dept: "Department of Mechanical Engineering", img: profimg26 },
-  "fac-skm-varadhan":              { id: "fac-skm-varadhan",              name: "Prof. SKM Varadhan",            email: "skm@iitm.ac.in",      dept: "Department of Applied Mechanics", img: profimg27 },
-  "fac-abhijit-deshpande":         { id: "fac-abhijit-deshpande",         name: "Prof. Abhijit Deshpande",           email: "abhijit@iitm.ac.in",  dept: "Department of Chemical Engineering", img: profimg28 },
-  "fac-vimal-edachery":            { id: "fac-vimal-edachery",            name: "Prof. Vimal Edachery",          email: "vimal@iitm.ac.in",    dept: "Department of Mechanical Engineering", img: profimg29 },
-  "fac-santosh-sahu":              { id: "fac-santosh-sahu",              name: "Prof. Santosh Sahu",          email: "santhosh@iitm.ac.in", dept: "Department of Humanities and Social Sciences", img: profimg30 },
+  "fac-varunkumar-s":              { id: "fac-varunkumar-s",              name: "Prof. Varunkumar S",            email: "varuns@iitm.ac.in",   dept: "Department of Mechanical Engineering", img: profimg14, bio: "Faculty member contributing to emerging technologies and interdisciplinary innovation initiatives." },
+  "fac-parasuraman-swaminathan":   { id: "fac-parasuraman-swaminathan",   name: "Prof. Parasuraman Swaminathan", email: "swamnthn@iitm.ac.in", dept: "Department of Metallurgical and Materials Engineering", img: profimg15, bio: "Professor, Metallurgical & Materials Engineering. Leads research in printed electronics, flexible sensors, and thin-film devices." },
+  "fac-prabhu-rajagopal":          { id: "fac-prabhu-rajagopal",          name: "Prof. Prabhu Rajagopal",      email: "prajagopal@iitm.ac.in", dept: "Department of Mechanical Engineering", img: profimg16, bio: "Professor of Mechanical Engineering, specializing in ultrasonics and structural health monitoring. His research enables advanced industrial technologies." },
+  "fac-boby-george":               { id: "fac-boby-george",               name: "Prof. Dr. Boby George",       email: "boby@iitm.ac.in",     dept: "Department of Electrical Engineering", img: profimg17, bio: "Professor of Electrical Engineering. He specializes in instrumentation, sensors, and measurement systems, enabling cutting-edge technologies with commercialization potential." },
+  "fac-satyanarayanan-seshadri":   { id: "fac-satyanarayanan-seshadri",   name: "Prof. Satyanarayanan Seshadri", email: "satya@iitm.ac.in",   dept: "Department of Applied Mechanics", img: profimg18, bio: "Head of the School of Innovation & Entrepreneurship at IIT Madras. His interests include entrepreneurship education, innovation ecosystems, and technology commercialization." },
+  "fac-ravi-kumar-nv":             { id: "fac-ravi-kumar-nv",             name: "Prof. Ravi Kumar N V",        email: "nvrk@smail.iitm.ac.in", dept: "Department of Metallurgical and Materials Engineering", img: profimg19, bio: "Professor, Metallurgical & Materials Engineering. Specializes in ceramics, polymer-derived materials, and energy applications." },
+  "fac-vijayalakshmi":             { id: "fac-vijayalakshmi",             name: "Prof. Vijayalakshmi",         email: "viji@iitm.ac.in",     dept: "Department of Management Studies", img: profimg20, bio: "Professor, Management Studies. Focuses on organizational behavior, psychology, and women entrepreneurship." },
+  "fac-kothandaraman-r":           { id: "fac-kothandaraman-r",           name: "Prof. Kothandaraman R",             email: "rkraman@iitm.ac.in",  dept: "Department of Chemistry", img: profimg21, bio: "Professor, Chemistry. Expert in materials electrochemistry, flow batteries, and sustainable energy systems." },
+  "fac-sathyan-subbiah":           { id: "fac-sathyan-subbiah",           name: "Prof. Sathyan Subbiah",       email: "sathyans@iitm.ac.in", dept: "Department of Mechanical Engineering", img: profimg22, bio: "Professor, Mechanical Engineering. Works on manufacturing engineering, micro-machining, and tribology." },
+  "fac-balaji-srinivasan":         { id: "fac-balaji-srinivasan",         name: "Prof. Balaji Srinivasan",       email: "sbalaji@iitm.ac.in",  dept: "Department of Mechanical Engineering", img: profimg23, bio: "Professor of Chemical Engineering. His expertise includes process control, automation, and systems engineering, promoting innovation in industrial processes." },
+  "fac-t-pradeep":                 { id: "fac-t-pradeep",                 name: "Prof. T Pradeep",             email: "pradeep@iitm.ac.in",  dept: "Department of Chemistry", img: profimg24, bio: "Institute Professor, Chemistry. Globally recognized for nanomaterials and water purification technologies." },
+  "fac-ramanathan-m":              { id: "fac-ramanathan-m",              name: "Prof. Ramanathan M",                email: "mraman@iitm.ac.in",   dept: "Department of Engineering Design", img: profimg25, bio: "Professor, Engineering Design. Expert in computational geometry, CAD/CAE, and AI in engineering design." },
+  "fac-piyush-shakya":             { id: "fac-piyush-shakya",             name: "Prof. Piyush Shakya",           email: "pshakya@iitm.ac.in",  dept: "Department of Mechanical Engineering", img: profimg26, bio: "Faculty member, Department of Mechanical Engineering, contributing to emerging technologies and interdisciplinary innovation initiatives." },
+  "fac-skm-varadhan":              { id: "fac-skm-varadhan",              name: "Prof. SKM Varadhan",            email: "skm@iitm.ac.in",      dept: "Department of Applied Mechanics", img: profimg27, bio: "Professor, Applied Mechanics. Specializes in neuromechanics, rehabilitation engineering, and assistive devices." },
+  "fac-abhijit-deshpande":         { id: "fac-abhijit-deshpande",         name: "Prof. Abhijit Deshpande",           email: "abhijit@iitm.ac.in",  dept: "Department of Chemical Engineering", img: profimg28, bio: "Professor of Chemical Engineering. He specializes in polymers, manufacturing systems, and industrial innovation, mentoring technology-driven startups." },
+  "fac-vimal-edachery":            { id: "fac-vimal-edachery",            name: "Prof. Vimal Edachery",          email: "vimal@iitm.ac.in",    dept: "Department of Mechanical Engineering", img: profimg29, bio: "Assistant Professor, Mechanical Engineering. Works on tribology, eco-friendly lubrication, and biomaterials." },
+  "fac-santosh-sahu":              { id: "fac-santosh-sahu",              name: "Prof. Santosh Sahu",          email: "santhosh@iitm.ac.in", dept: "Department of Humanities and Social Sciences", img: profimg30, bio: "Professor of Metallurgical & Materials Engineering. His research focuses on nanotechnology and advanced materials for energy and healthcare applications." },
 };
 
 // Map of student id -> faculty id.
@@ -508,36 +508,36 @@ export const INITIAL_STUDENTS = [
     image: img32,
     startup: "Managing next generation autonomous factories using digital twins"
   },
-  {
-    id: 33,
-    yr: "2026",
-    name: "Mariam Fatima",
-    roll: "ER2604M0020",
-    title: "",
-    linkedin: "https://www.linkedin.com/in/mariam-fatima-eee/",
-    image: img33,
-    startup: "Managing next generation autonomous factories using digital twins"
-  },
-  {
-    id: 34,
-    yr: "2026",
-    name: "Fasil C",
-    roll: "ER2603M0123",
-    title: "",
-    linkedin: "https://www.linkedin.com/in/fasil-c-hameed?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
-    image: img34,
-    startup: "Lithium-ion Battery Cathode Active Material Manufacturing"
-  },
-  {
-    id: 35,
-    yr: "2026",
-    name: "Hritij Rana",
-    roll: "ER2604M0112",
-    title: "",
-    linkedin: "https://www.linkedin.com/in/hritijrana/",
-    image: img35,
-    startup: "Ball tracking system development for sports analytics"
-  },
+  // {
+  //   id: 33,
+  //   yr: "2026",
+  //   name: "Mariam Fatima",
+  //   roll: "ER2604M0020",
+  //   title: "",
+  //   linkedin: "https://www.linkedin.com/in/mariam-fatima-eee/",
+  //   image: img33,
+  //   startup: "Managing next generation autonomous factories using digital twins"
+  // },
+  // {
+  //   id: 34,
+  //   yr: "2026",
+  //   name: "Fasil C",
+  //   roll: "ER2603M0123",
+  //   title: "",
+  //   linkedin: "https://www.linkedin.com/in/fasil-c-hameed?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+  //   image: img34,
+  //   startup: "Lithium-ion Battery Cathode Active Material Manufacturing"
+  // },
+  // {
+  //   id: 35,
+  //   yr: "2026",
+  //   name: "Hritij Rana",
+  //   roll: "ER2604M0112",
+  //   title: "",
+  //   linkedin: "https://www.linkedin.com/in/hritijrana/",
+  //   image: img35,
+  //   startup: "Ball tracking system development for sports analytics"
+  // },
   {
     id: 36,
     yr: "2026",
@@ -628,16 +628,16 @@ export const INITIAL_STUDENTS = [
     image: img44,
     startup: "Development of alternative battery technology"
   },
-  {
-    id: 45,
-    yr: "2026",
-    name: "Prashanth Krishnamoorthy",
-    roll: "ER2603M0112",
-    title: "",
-    linkedin: "",
-    image: img45,
-    startup: "Laser-processed medical materials and devices - lab-to-market"
-  },
+  // {
+  //   id: 45,
+  //   yr: "2026",
+  //   name: "Prashanth Krishnamoorthy",
+  //   roll: "ER2603M0112",
+  //   title: "",
+  //   linkedin: "",
+  //   image: img45,
+  //   startup: "Laser-processed medical materials and devices - lab-to-market"
+  // },
   {
     id: 46,
     yr: "2026",
@@ -732,6 +732,7 @@ function _assignFaculty(studentId, facultyPayload) {
             name: facultyPayload.name,
             email: facultyPayload.email || "",
             dept: facultyPayload.dept || "",
+            bio: facultyPayload.bio || "",
             img: null,
           },
         }
@@ -834,7 +835,7 @@ const SortIcon = ({ col, sortCol, sortDir }) =>
 // ─── StudentFormModal ─────────────────────────────────────────────────────────
 const EMPTY_FORM = {
   yr: "2021", name: "", roll: "", title: "", linkedin: "", startup: "",
-  facultyId: "", facultyName: "", facultyEmail: "", facultyDept: "",
+  facultyId: "", facultyName: "", facultyEmail: "", facultyDept: "", facultyBio: "",
 };
 
 function StudentFormModal({ student, onSave, onClose, facultyDirectory, facultyMap }) {
@@ -846,7 +847,7 @@ function StudentFormModal({ student, onSave, onClose, facultyDirectory, facultyM
       ? {
           yr: student.yr, name: student.name, roll: student.roll, title: student.title,
           linkedin: student.linkedin, startup: student.startup || "",
-          facultyId: initialFacultyId, facultyName: "", facultyEmail: "", facultyDept: "",
+          facultyId: initialFacultyId, facultyName: "", facultyEmail: "", facultyDept: "", facultyBio: "",
         }
       : EMPTY_FORM
   );
@@ -884,7 +885,7 @@ function StudentFormModal({ student, onSave, onClose, facultyDirectory, facultyM
       yr: form.yr, name: form.name, roll: form.roll, title: form.title,
       linkedin: form.linkedin, startup: form.startup,
       faculty: isNewFaculty
-        ? { isNew: true, name: form.facultyName, email: form.facultyEmail, dept }
+        ? { isNew: true, name: form.facultyName, email: form.facultyEmail, dept, bio: form.facultyBio }
         : { isNew: false, facultyId: form.facultyId },
     };
     onSave(payload);
@@ -997,6 +998,13 @@ function StudentFormModal({ student, onSave, onClose, facultyDirectory, facultyM
                   onChange={(e) => set("facultyEmail", e.target.value)}
                   placeholder="Email, e.g. anita@iitm.ac.in"
                   className="w-full text-sm bg-white border border-slate-200 rounded-lg px-3 py-2 text-slate-800 placeholder-slate-300 outline-none focus:ring-2 focus:ring-blue-100 focus:border-blue-300 transition"
+                />
+                <textarea
+                  value={form.facultyBio}
+                  onChange={(e) => set("facultyBio", e.target.value)}
+                  placeholder="Short bio, e.g. Professor of Mechanical Engineering. Works on..."
+                  rows={3}
+                  className="w-full text-sm bg-white border border-slate-200 rounded-lg px-3 py-2 text-slate-800 placeholder-slate-300 outline-none focus:ring-2 focus:ring-blue-100 focus:border-blue-300 transition resize-none"
                 />
               </div>
             )}

@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "../src/pages/Home"
 import About from './pages/About';
+import OurTeam from './pages/OurTeam';
 import News from './pages/news';
 import Contact from './pages/contact';
 import Initiatives from './pages/duplicate';
@@ -18,6 +19,7 @@ import Projects from './pages/ms(e)pages/Projects';
 import Eligibility from './pages/ms(e)pages/Eligibility';
 import Scholarship from './pages/ms(e)pages/Scholorship';
 import ApplyPage from './pages/ms(e)pages/How_to_apply';
+
 function App() {
   return (
     <BrowserRouter>
@@ -25,6 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about_us" element={<About />} />
+          <Route path="/our-team" element={<OurTeam />} />
           <Route path="/news" element={<News />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/initiatives" element={<Initiatives />} />
